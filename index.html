@@ -57,150 +57,32 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 5:16:38 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 5:31:41 AM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">7</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
-    <div class="progress-card">
-  <div class="progress-head">
-    <div class="progress-title">focal_therapy_tumor_board / treatment_reconciliation_v1</div>
-    <div class="progress-pct">100.00%</div>
-  </div>
-  <div class="bar"><div class="fill" style="width:100%"></div></div>
-  <div class="progress-stats">
-    <span>8,030 / 8,030 calls</span>
-    <span>161 / 161 chunks</span>
-  </div>
-  <div class="eta">Extraction complete</div>
-</div>
-<div class="progress-card">
-  <div class="progress-head">
-    <div class="progress-title">partial_nephrectomy / pilot_v1_20261009</div>
-    <div class="progress-pct">0.00%</div>
-  </div>
-  <div class="bar"><div class="fill" style="width:0%"></div></div>
-  <div class="progress-stats">
-    <span>0 / 26,686 calls</span>
-    <span>0 / 200 chunks</span>
-  </div>
-  <div class="eta">ETA unavailable</div>
-</div>
+    <div class="empty">No matching extraction progress is available.</div>
   </section>
 
   <section>
     <h2>Jobs</h2>
-    <div class="job">
-  <div class="job-main">
-    <div class="job-name">fttb_txrecon_guard</div>
-    <div class="job-id">Job 6597064</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>0:01</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">lri000</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">fttb_txrecon_facts</div>
-    <div class="job-id">Job 6597066</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>0:11</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">lri003</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">fttb_txrecon_guard</div>
-    <div class="job-id">Job 6597065</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>0:01</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">lri000</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">fttb_txrecon_guard</div>
-    <div class="job-id">Job 6597063</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>0:01</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">lri000</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">llmx_fttb_txrecon1</div>
-    <div class="job-id">Job 6596905</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill other">CANCELLED</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason"></div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">llmx_fttb_txrecon1</div>
-    <div class="job-id">Job 6596904</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>1:51</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g010</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">llmx_fttb_txrecon1</div>
-    <div class="job-id">Job 6596903</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>2:40:53</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g010</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">rapn_pilot_v1</div>
-    <div class="job-id">Job 6597211</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>0:19</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g010</div>
-</div>
+    <div class="empty">No jobs are currently in the scheduler queue.</div>
   </section>
 
   <div class="footer">Read-only status dashboard. Browser refreshes automatically.</div>
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-10T05:16:38.9128975-04:00');
+const updatedAt = new Date('2026-10-10T05:31:41.8674653-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
