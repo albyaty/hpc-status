@@ -57,37 +57,25 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 5:46:25 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 6:01:27 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">10</div><div class="stat-label">Queued</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
-    <div class="empty">No matching extraction progress is available.</div>
+    <div class="empty">No extraction progress is available.</div>
   </section>
 
   <section>
     <h2>Jobs</h2>
     <div class="job">
-  <div class="job-main">
-    <div class="job-name">k564_preflight_full</div>
-    <div class="job-id">Job 6611819</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>17:09</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">lri000</div>
-</div>
-<div class="job">
   <div class="job-main">
     <div class="job-name">llmx_fttb_complication_adjudication_v2n</div>
     <div class="job-id">Job 6611763</div>
@@ -157,7 +145,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Resources)</div>
+  <div class="reason">(Priority)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -169,7 +157,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Dependency)</div>
+  <div class="reason">(Resources)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -181,7 +169,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Dependency)</div>
+  <div class="reason">(Resources)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -193,7 +181,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Dependency)</div>
+  <div class="reason">(Resources)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -205,7 +193,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Dependency)</div>
+  <div class="reason">(Resources)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -214,18 +202,18 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>24:07</span>
+    <span>39:09</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
 </div>
   </section>
 
-  <div class="footer">Read-only status dashboard. Browser refreshes automatically.</div>
+  <div class="footer">Status publishes every 10 minutes. Browser refreshes automatically. Progress counts completed chunks.</div>
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-10T17:46:25.2347547-04:00');
+const updatedAt = new Date('2026-10-10T18:01:27.9540130-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
@@ -235,7 +223,7 @@ function updateAge(){
     const hrs = Math.floor(mins/60);
     age.textContent = hrs + ' hr' + (hrs===1?'':'s') + ' ago';
   }
-  if(mins >= 35) document.getElementById('stale').style.display='block';
+  if(mins >= 25) document.getElementById('stale').style.display='block';
 }
 updateAge();
 setInterval(updateAge, 30000);
