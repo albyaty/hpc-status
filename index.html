@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 7:23:45 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 7:28:55 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -65,7 +65,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="summary">
     <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">11</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
@@ -121,14 +121,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">focal_therapy_tumor_board_supp / supp_source_v2</div>
-    <div class="progress-pct">7.23%</div>
+    <div class="progress-pct">8.07%</div>
   </div>
-  <div class="bar"><div class="fill" style="width:7%"></div></div>
+  <div class="bar"><div class="fill" style="width:8%"></div></div>
   <div class="progress-stats">
-    <span>22,763 / 314,927 calls</span>
-    <span>9 / 122 chunks</span>
+    <span>25,403 / 314,927 calls</span>
+    <span>10 / 122 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 11, 6:38 PM Eastern</div>
+  <div class="eta">Estimated finish: Oct 11, 6:23 PM Eastern</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
@@ -159,30 +159,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <section>
     <h2>Jobs</h2>
     <div class="job">
-  <div class="job-main">
-    <div class="job-name">llmx_fttb_supp2</div>
-    <div class="job-id">Job 6610990</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill other">CANCELLED</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason"></div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">llmx_fttb_supp2</div>
-    <div class="job-id">Job 6610991</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill other">CANCELLED</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason"></div>
-</div>
-<div class="job">
   <div class="job-main">
     <div class="job-name">llmx_fttb_supp2</div>
     <div class="job-id">Job 6613119</div>
@@ -321,7 +297,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>2:01:20</span>
+    <span>2:06:30</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
@@ -332,7 +308,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-10T19:23:45.5768840-04:00');
+const updatedAt = new Date('2026-10-10T19:28:55.6486050-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
