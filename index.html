@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 6:11:36 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 6:11:51 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -273,18 +273,18 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>49:12</span>
+    <span>49:28</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
 </div>
   </section>
 
-  <div class="footer">Status publishes every 10 minutes. Browser refreshes automatically. Progress counts completed chunks.</div>
+  <div class="footer">Status publishes every 5 minutes. Browser refreshes automatically. Progress counts completed chunks.</div>
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-10T18:11:36.3594965-04:00');
+const updatedAt = new Date('2026-10-10T18:11:51.9676296-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
@@ -294,7 +294,7 @@ function updateAge(){
     const hrs = Math.floor(mins/60);
     age.textContent = hrs + ' hr' + (hrs===1?'':'s') + ' ago';
   }
-  if(mins >= 25) document.getElementById('stale').style.display='block';
+  if(mins >= 15) document.getElementById('stale').style.display='block';
 }
 updateAge();
 setInterval(updateAge, 30000);
