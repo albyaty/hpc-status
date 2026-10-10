@@ -57,28 +57,39 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 5:46:45 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 6:01:49 AM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Queued</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
-    <div class="empty">No matching extraction progress is available.</div>
+    <div class="progress-card">
+  <div class="progress-head">
+    <div class="progress-title">keynote564_pembrolizumab / pilot_v1_20261010</div>
+    <div class="progress-pct">9.63%</div>
+  </div>
+  <div class="bar"><div class="fill" style="width:10%"></div></div>
+  <div class="progress-stats">
+    <span>603 / 6,263 calls</span>
+    <span>2 / 24 chunks</span>
+  </div>
+  <div class="eta">Estimated finish: Oct 10, 7:34 AM Eastern</div>
+</div>
   </section>
 
   <section>
     <h2>Jobs</h2>
     <div class="job">
   <div class="job-main">
-    <div class="job-name">k564_preflight_v1</div>
-    <div class="job-id">Job 6603758</div>
+    <div class="job-name">rapn_preflight_v2</div>
+    <div class="job-id">Job 6603876</div>
   </div>
   <div class="job-meta">
     <span class="pill pending">PENDING</span>
@@ -93,11 +104,11 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job-id">Job 6603759</div>
   </div>
   <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
+    <span class="pill running">RUNNING</span>
+    <span>12:35</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Dependency)</div>
+  <div class="reason">g010</div>
 </div>
   </section>
 
@@ -105,7 +116,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-10T05:46:45.1772843-04:00');
+const updatedAt = new Date('2026-10-10T06:01:49.8721307-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
