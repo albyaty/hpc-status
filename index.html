@@ -57,14 +57,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 3:00:48 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 3:15:51 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">10</div><div class="stat-label">Queued</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
@@ -77,6 +77,42 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <h2>Jobs</h2>
     <div class="job">
   <div class="job-main">
+    <div class="job-name">rapn_full_preflight_v4</div>
+    <div class="job-id">Job 6610237</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">(Priority)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">rapn_preflight_v4</div>
+    <div class="job-id">Job 6610236</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">(Priority)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">k564_preflight_p3</div>
+    <div class="job-id">Job 6610166</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">(Priority)</div>
+</div>
+<div class="job">
+  <div class="job-main">
     <div class="job-name">k564_qc</div>
     <div class="job-id">Job 6608508</div>
   </div>
@@ -86,6 +122,30 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>defq</span>
   </div>
   <div class="reason">(JobHeldUser)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">k564_pilot_v3</div>
+    <div class="job-id">Job 6610167_0</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Dependency)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">k564_pilot_v3</div>
+    <div class="job-id">Job 6610167_1</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Dependency)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -141,7 +201,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-10T15:00:48.7841057-04:00');
+const updatedAt = new Date('2026-10-10T15:15:51.9082830-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
