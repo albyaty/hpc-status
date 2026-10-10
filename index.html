@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 9, 2026 11:09:09 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 9, 2026 11:14:15 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -200,7 +200,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-09T23:09:09.8240014-04:00');
+const updatedAt = new Date('2026-10-09T23:14:15.4446379-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
@@ -210,7 +210,7 @@ function updateAge(){
     const hrs = Math.floor(mins/60);
     age.textContent = hrs + ' hr' + (hrs===1?'':'s') + ' ago';
   }
-  if(mins >= 15) document.getElementById('stale').style.display='block';
+  if(mins >= 35) document.getElementById('stale').style.display='block';
 }
 updateAge();
 setInterval(updateAge, 30000);
