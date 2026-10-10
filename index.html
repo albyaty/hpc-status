@@ -57,14 +57,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 12:59:52 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 1:14:55 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Queued</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
@@ -75,14 +75,61 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 
   <section>
     <h2>Jobs</h2>
-    <div class="empty">No jobs are currently in the scheduler queue.</div>
+    <div class="job">
+  <div class="job-main">
+    <div class="job-name">rapn_full_preflight_v3</div>
+    <div class="job-id">Job 6608288</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">(Priority)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">k564_preflight_p2</div>
+    <div class="job-id">Job 6608248</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill running">RUNNING</span>
+    <span>0:39</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">lri028</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">rapn_preflight_v3</div>
+    <div class="job-id">Job 6608250</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill running">RUNNING</span>
+    <span>0:39</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">lri009</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">k564_pilot_v2</div>
+    <div class="job-id">Job 6608249_0</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Dependency)</div>
+</div>
   </section>
 
   <div class="footer">Read-only status dashboard. Browser refreshes automatically.</div>
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-10T12:59:52.7207490-04:00');
+const updatedAt = new Date('2026-10-10T13:14:55.2327355-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
