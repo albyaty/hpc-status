@@ -57,14 +57,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 6:16:44 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 6:21:53 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">10</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">11</div><div class="stat-label">Queued</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
@@ -121,14 +121,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">focal_therapy_tumor_board_supp / supp_source_v2</div>
-    <div class="progress-pct">3.03%</div>
+    <div class="progress-pct">3.86%</div>
   </div>
-  <div class="bar"><div class="fill" style="width:3%"></div></div>
+  <div class="bar"><div class="fill" style="width:4%"></div></div>
   <div class="progress-stats">
-    <span>9,544 / 314,927 calls</span>
-    <span>4 / 122 chunks</span>
+    <span>12,157 / 314,927 calls</span>
+    <span>5 / 122 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 11, 5:37 PM Eastern</div>
+  <div class="eta">Estimated finish: Oct 11, 5:35 PM Eastern</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
@@ -142,11 +142,35 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="eta">ETA unavailable</div>
 </div>
+<div class="progress-card">
+  <div class="progress-head">
+    <div class="progress-title">partial_nephrectomy / pilot_v4_20261010</div>
+    <div class="progress-pct">0.00%</div>
+  </div>
+  <div class="bar"><div class="fill" style="width:0%"></div></div>
+  <div class="progress-stats">
+    <span>0 / 26,686 calls</span>
+    <span>0 / 200 chunks</span>
+  </div>
+  <div class="eta">ETA unavailable</div>
+</div>
   </section>
 
   <section>
     <h2>Jobs</h2>
     <div class="job">
+  <div class="job-main">
+    <div class="job-name">rapn_pilot_v4_resume</div>
+    <div class="job-id">Job 6612440</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Priority)</div>
+</div>
+<div class="job">
   <div class="job-main">
     <div class="job-name">llmx_fttb_complication_adjudication_v2n</div>
     <div class="job-id">Job 6611763</div>
@@ -273,7 +297,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>54:20</span>
+    <span>59:28</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
@@ -284,7 +308,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-10T18:16:44.3802723-04:00');
+const updatedAt = new Date('2026-10-10T18:21:53.4605288-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
