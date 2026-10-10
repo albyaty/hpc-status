@@ -57,14 +57,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 5:01:15 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 5:16:18 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">13</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">11</div><div class="stat-label">Queued</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
@@ -76,30 +76,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <section>
     <h2>Jobs</h2>
     <div class="job">
-  <div class="job-main">
-    <div class="job-name">fttb_prep_field_adjudication_v1b</div>
-    <div class="job-id">Job 6611473</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">(Priority)</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">fttb_prep_board_reason_v2</div>
-    <div class="job-id">Job 6611462</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">(Priority)</div>
-</div>
-<div class="job">
   <div class="job-main">
     <div class="job-name">k564_qc</div>
     <div class="job-id">Job 6608508</div>
@@ -121,7 +97,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Dependency)</div>
+  <div class="reason">(Priority)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -133,7 +109,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Dependency)</div>
+  <div class="reason">(Priority)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -238,7 +214,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>5:59</span>
+    <span>21:02</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
@@ -249,7 +225,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-10T17:01:15.8028823-04:00');
+const updatedAt = new Date('2026-10-10T17:16:18.8430199-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
