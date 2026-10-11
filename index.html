@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 11, 2026 5:17:44 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 11, 2026 5:22:55 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -77,26 +77,26 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">focal_therapy_tumor_board / complication_source_v1</div>
-    <div class="progress-pct">9.04%</div>
+    <div class="progress-pct">22.60%</div>
   </div>
-  <div class="bar"><div class="fill" style="width:9%"></div></div>
+  <div class="bar"><div class="fill" style="width:23%"></div></div>
   <div class="progress-stats">
-    <span>400 / 4,424 calls</span>
-    <span>2 / 23 chunks</span>
+    <span>1,000 / 4,424 calls</span>
+    <span>5 / 23 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 11, 6:09 PM Eastern</div>
+  <div class="eta">Estimated finish: Oct 11, 6:03 PM Eastern</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">focal_therapy_tumor_board_supp / complication_source_v1</div>
-    <div class="progress-pct">7.02%</div>
+    <div class="progress-pct">21.07%</div>
   </div>
-  <div class="bar"><div class="fill" style="width:7%"></div></div>
+  <div class="bar"><div class="fill" style="width:21%"></div></div>
   <div class="progress-stats">
-    <span>200 / 2,847 calls</span>
-    <span>1 / 15 chunks</span>
+    <span>600 / 2,847 calls</span>
+    <span>3 / 15 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 11, 5:57 PM Eastern</div>
+  <div class="eta">Estimated finish: Oct 11, 5:55 PM Eastern</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
@@ -144,18 +144,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
-    <div class="job-name">k564_full</div>
-    <div class="job-id">Job 6608509_1</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">(Priority)</div>
-</div>
-<div class="job">
-  <div class="job-main">
     <div class="job-name">rapn_repair_gpu_v5</div>
     <div class="job-id">Job 6617245</div>
   </div>
@@ -192,12 +180,24 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
+    <div class="job-name">k564_full</div>
+    <div class="job-id">Job 6608509_1</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Priority)</div>
+</div>
+<div class="job">
+  <div class="job-main">
     <div class="job-name">llmx_fttb_compsrc_supp</div>
     <div class="job-id">Job 6619539</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>6:12</span>
+    <span>11:23</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
@@ -209,7 +209,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>8:12</span>
+    <span>13:23</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -220,7 +220,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-11T17:17:44.1356716-04:00');
+const updatedAt = new Date('2026-10-11T17:22:55.9150134-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
