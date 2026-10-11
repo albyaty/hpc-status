@@ -57,15 +57,15 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 10:29:31 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 10:34:40 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">9</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">8</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
@@ -77,14 +77,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">focal_therapy_tumor_board / complication_adjudication_v2</div>
-    <div class="progress-pct">85.32%</div>
+    <div class="progress-pct">100.00%</div>
   </div>
-  <div class="bar"><div class="fill" style="width:85%"></div></div>
+  <div class="bar"><div class="fill" style="width:100%"></div></div>
   <div class="progress-stats">
-    <span>250 / 293 calls</span>
-    <span>5 / 6 chunks</span>
+    <span>293 / 293 calls</span>
+    <span>6 / 6 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 10, 10:37 PM Eastern</div>
+  <div class="eta">Extraction complete</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
@@ -108,7 +108,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>65,434 / 314,927 calls</span>
     <span>25 / 122 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 11, 5:50 PM Eastern</div>
+  <div class="eta">Estimated finish: Oct 11, 5:55 PM Eastern</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
@@ -152,6 +152,18 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
+    <div class="job-name">llmx_fttb_complication_adjudication_v2</div>
+    <div class="job-id">Job 6611761</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill complete">COMPLETED</span>
+    <span>55:38</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">g007</div>
+</div>
+<div class="job">
+  <div class="job-main">
     <div class="job-name">llmx_fttb_supp2</div>
     <div class="job-id">Job 6613119</div>
   </div>
@@ -166,18 +178,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="job-main">
     <div class="job-name">llmx_fttb_supp2</div>
     <div class="job-id">Job 6613118</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">(Priority)</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">llmx_fttb_complication_adjudication_v2n</div>
-    <div class="job-id">Job 6611763</div>
   </div>
   <div class="job-meta">
     <span class="pill pending">PENDING</span>
@@ -248,12 +248,12 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
-    <div class="job-name">llmx_fttb_complication_adjudication_v2</div>
-    <div class="job-id">Job 6611761</div>
+    <div class="job-name">llmx_fttb_complication_adjudication_v2n</div>
+    <div class="job-id">Job 6611763</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>51:08</span>
+    <span>0:17</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -265,7 +265,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>5:07:08</span>
+    <span>5:12:16</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
@@ -276,7 +276,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-10T22:29:31.9902656-04:00');
+const updatedAt = new Date('2026-10-10T22:34:40.7846773-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
