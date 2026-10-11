@@ -57,24 +57,20 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 11, 2026 10:02:10 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 11, 2026 10:07:17 AM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">8</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
-  <div class="progress-title">fttb_prep_suppaddons</div>
-  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
-</div>
-<div class="progress-card">
   <div class="progress-title">fttb_release_others</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
@@ -121,32 +117,20 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">keynote564_pembrolizumab / full_v1_20261010</div>
-    <div class="progress-pct">2.13%</div>
+    <div class="progress-pct">2.43%</div>
   </div>
   <div class="bar"><div class="fill" style="width:2%"></div></div>
   <div class="progress-stats">
-    <span>3,647 / 171,154 calls</span>
-    <span>12 / 651 chunks</span>
+    <span>4,164 / 171,154 calls</span>
+    <span>14 / 651 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 12, 2:50 PM Eastern</div>
+  <div class="eta">Estimated finish: Oct 12, 2:44 PM Eastern</div>
 </div>
   </section>
 
   <section>
     <h2>Jobs</h2>
     <div class="job">
-  <div class="job-main">
-    <div class="job-name">fttb_prep_suppaddons</div>
-    <div class="job-id">Job 6617200</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>0:03</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">lri002</div>
-</div>
-<div class="job">
   <div class="job-main">
     <div class="job-name">fttb_release_others</div>
     <div class="job-id">Job 6617204</div>
@@ -168,7 +152,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(None)</div>
+  <div class="reason">(Priority)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -180,31 +164,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(None)</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">llmx_fttb_supp_field_adjudication_v1b</div>
-    <div class="job-id">Job 6617201</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">(None)</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">k564_full</div>
-    <div class="job-id">Job 6608509_2</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">(job requeued in held state)</div>
+  <div class="reason">(Resources)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -217,6 +177,18 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>gpu-h100</span>
   </div>
   <div class="reason">(JobHeldUser)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">k564_full</div>
+    <div class="job-id">Job 6608509_2</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(job requeued in held state)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -244,12 +216,24 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
+    <div class="job-name">llmx_fttb_supp_field_adjudication_v1b</div>
+    <div class="job-id">Job 6617201</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill running">RUNNING</span>
+    <span>4:52</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">g010</div>
+</div>
+<div class="job">
+  <div class="job-main">
     <div class="job-name">k564_full</div>
     <div class="job-id">Job 6608509_1</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>13:46</span>
+    <span>18:52</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -260,7 +244,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-11T10:02:10.1328832-04:00');
+const updatedAt = new Date('2026-10-11T10:07:17.0566028-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
