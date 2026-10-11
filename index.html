@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 10:44:56 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 10, 2026 10:50:02 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -65,34 +65,18 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="summary">
     <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">8</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
-  <div class="progress-title">fttb_release_k564_rapn</div>
-  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
-</div>
-<div class="progress-card">
   <div class="progress-title">fttb_release_k564</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
   <div class="progress-title">fttb_release_rapn</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
-</div>
-<div class="progress-card">
-  <div class="progress-head">
-    <div class="progress-title">focal_therapy_tumor_board / complication_adjudication_v2n</div>
-    <div class="progress-pct">100.00%</div>
-  </div>
-  <div class="bar"><div class="fill" style="width:100%"></div></div>
-  <div class="progress-stats">
-    <span>293 / 293 calls</span>
-    <span>6 / 6 chunks</span>
-  </div>
-  <div class="eta">Extraction complete</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
@@ -104,7 +88,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>67,876 / 314,927 calls</span>
     <span>26 / 122 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 11, 8:22 AM Eastern</div>
+  <div class="eta">Estimated finish: Oct 11, 8:27 AM Eastern</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
@@ -136,18 +120,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <h2>Jobs</h2>
     <div class="job">
   <div class="job-main">
-    <div class="job-name">fttb_release_k564_rapn</div>
-    <div class="job-id">Job 6615134</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill other">CANCELLED</span>
-    <span>0:00</span>
-    <span>defq</span>
-  </div>
-  <div class="reason"></div>
-</div>
-<div class="job">
-  <div class="job-main">
     <div class="job-name">fttb_release_k564</div>
     <div class="job-id">Job 6615332</div>
   </div>
@@ -169,18 +141,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>defq</span>
   </div>
   <div class="reason">(Dependency)</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">llmx_fttb_complication_adjudication_v2n</div>
-    <div class="job-id">Job 6611763</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>6:45</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g007</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -261,7 +221,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>3:34</span>
+    <span>8:41</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -273,7 +233,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>5:22:34</span>
+    <span>5:27:41</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
@@ -284,7 +244,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-10T22:44:56.6258880-04:00');
+const updatedAt = new Date('2026-10-10T22:50:02.9684609-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
