@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 11, 2026 10:32:57 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 11, 2026 10:38:08 AM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -84,19 +84,19 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>50 / 162 calls</span>
     <span>1 / 4 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 11, 10:58 AM Eastern</div>
+  <div class="eta">Estimated finish: Oct 11, 11:03 AM Eastern</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">keynote564_pembrolizumab / full_v1_20261010</div>
-    <div class="progress-pct">3.79%</div>
+    <div class="progress-pct">4.10%</div>
   </div>
   <div class="bar"><div class="fill" style="width:4%"></div></div>
   <div class="progress-stats">
-    <span>6,482 / 171,154 calls</span>
-    <span>22 / 651 chunks</span>
+    <span>7,015 / 171,154 calls</span>
+    <span>24 / 651 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 12, 2:48 PM Eastern</div>
+  <div class="eta">Estimated finish: Oct 12, 3:31 PM Eastern</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
@@ -121,10 +121,22 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>5:29</span>
+    <span>10:40</span>
     <span>defq</span>
   </div>
   <div class="reason">lri000</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">llmx_bsync_pilot1</div>
+    <div class="job-id">Job 6616192</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Priority)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -160,19 +172,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Priority)</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">llmx_bsync_pilot1</div>
-    <div class="job-id">Job 6616192</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">(Priority)</div>
+  <div class="reason">(Resources)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -184,7 +184,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Priority)</div>
+  <div class="reason">(Resources)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -193,7 +193,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>14:28</span>
+    <span>19:39</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
@@ -205,7 +205,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>44:30</span>
+    <span>49:41</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -216,7 +216,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-11T10:32:57.9243123-04:00');
+const updatedAt = new Date('2026-10-11T10:38:08.8676515-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
