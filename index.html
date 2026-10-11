@@ -57,34 +57,70 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 11, 2026 6:09:32 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 11, 2026 6:14:44 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
+  <div class="progress-title">fttb_prep_bundle_orig</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
+  <div class="progress-title">fttb_prep_bundle_supp</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
+  <div class="progress-title">fttb_release_others</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
   <div class="progress-title">llmx_bsync_pilot1</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
+    <div class="progress-title">focal_therapy_tumor_board / complication_bundle_v1</div>
+    <div class="progress-pct">0.00%</div>
+  </div>
+  <div class="bar"><div class="fill" style="width:0%"></div></div>
+  <div class="progress-stats">
+    <span>0 / 185 calls</span>
+    <span>0 / 8 chunks</span>
+  </div>
+  <div class="eta">ETA unavailable</div>
+</div>
+<div class="progress-card">
+  <div class="progress-head">
+    <div class="progress-title">focal_therapy_tumor_board_supp / complication_bundle_v1</div>
+    <div class="progress-pct">0.00%</div>
+  </div>
+  <div class="bar"><div class="fill" style="width:0%"></div></div>
+  <div class="progress-stats">
+    <span>0 / 36 calls</span>
+    <span>0 / 2 chunks</span>
+  </div>
+  <div class="eta">ETA unavailable</div>
+</div>
+<div class="progress-card">
+  <div class="progress-head">
     <div class="progress-title">keynote564_pembrolizumab / full_v1_20261010</div>
-    <div class="progress-pct">29.93%</div>
+    <div class="progress-pct">30.20%</div>
   </div>
   <div class="bar"><div class="fill" style="width:30%"></div></div>
   <div class="progress-stats">
-    <span>51,225 / 171,154 calls</span>
-    <span>193 / 651 chunks</span>
+    <span>51,686 / 171,154 calls</span>
+    <span>195 / 651 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 12, 1:56 PM Eastern</div>
+  <div class="eta">ETA unavailable</div>
 </div>
 <div class="progress-card">
   <div class="progress-title">partial_nephrectomy / pilot_v5_20261011</div>
@@ -96,8 +132,44 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <h2>Jobs</h2>
     <div class="job">
   <div class="job-main">
-    <div class="job-name">k564_full</div>
-    <div class="job-id">Job 6608509_2</div>
+    <div class="job-name">fttb_prep_bundle_orig</div>
+    <div class="job-id">Job 6620163</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill complete">COMPLETED</span>
+    <span>0:02</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">lri000</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">fttb_prep_bundle_supp</div>
+    <div class="job-id">Job 6620165</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill complete">COMPLETED</span>
+    <span>0:02</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">lri056</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">fttb_release_others</div>
+    <div class="job-id">Job 6620167</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">(Dependency)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">llmx_fttb_bundle_supp</div>
+    <div class="job-id">Job 6620166</div>
   </div>
   <div class="job-meta">
     <span class="pill pending">PENDING</span>
@@ -116,7 +188,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Priority)</div>
+  <div class="reason">(JobHeldUser)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -128,7 +200,19 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Resources)</div>
+  <div class="reason">(JobHeldUser)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">k564_full</div>
+    <div class="job-id">Job 6608509_2</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(JobHeldUser)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -140,7 +224,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Resources)</div>
+  <div class="reason">(JobHeldUser)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -148,8 +232,20 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job-id">Job 6608509_0</div>
   </div>
   <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(job requeued in held state)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">llmx_fttb_bundle_orig</div>
+    <div class="job-id">Job 6620164</div>
+  </div>
+  <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>8:03</span>
+    <span>2:11</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -161,7 +257,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>15:03</span>
+    <span>20:12</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
@@ -172,7 +268,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-11T18:09:32.9999547-04:00');
+const updatedAt = new Date('2026-10-11T18:14:44.0985331-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
