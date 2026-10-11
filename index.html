@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 11, 2026 6:04:24 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 11, 2026 6:09:32 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -65,7 +65,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="summary">
     <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">4</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
@@ -76,25 +76,13 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="progress-card">
   <div class="progress-head">
-    <div class="progress-title">focal_therapy_tumor_board / complication_source_v1</div>
-    <div class="progress-pct">100.00%</div>
-  </div>
-  <div class="bar"><div class="fill" style="width:100%"></div></div>
-  <div class="progress-stats">
-    <span>4,424 / 4,424 calls</span>
-    <span>23 / 23 chunks</span>
-  </div>
-  <div class="eta">Extraction complete</div>
-</div>
-<div class="progress-card">
-  <div class="progress-head">
     <div class="progress-title">keynote564_pembrolizumab / full_v1_20261010</div>
-    <div class="progress-pct">29.64%</div>
+    <div class="progress-pct">29.93%</div>
   </div>
   <div class="bar"><div class="fill" style="width:30%"></div></div>
   <div class="progress-stats">
-    <span>50,725 / 171,154 calls</span>
-    <span>191 / 651 chunks</span>
+    <span>51,225 / 171,154 calls</span>
+    <span>193 / 651 chunks</span>
   </div>
   <div class="eta">Estimated finish: Oct 12, 1:56 PM Eastern</div>
 </div>
@@ -107,18 +95,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <section>
     <h2>Jobs</h2>
     <div class="job">
-  <div class="job-main">
-    <div class="job-name">llmx_fttb_compsrc_orig</div>
-    <div class="job-id">Job 6619537</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>51:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g007</div>
-</div>
-<div class="job">
   <div class="job-main">
     <div class="job-name">k564_full</div>
     <div class="job-id">Job 6608509_2</div>
@@ -173,7 +149,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>2:52</span>
+    <span>8:03</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -185,7 +161,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>9:52</span>
+    <span>15:03</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
@@ -196,7 +172,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-11T18:04:24.6265485-04:00');
+const updatedAt = new Date('2026-10-11T18:09:32.9999547-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
