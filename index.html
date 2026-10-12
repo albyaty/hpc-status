@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 12, 2026 8:40:53 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 12, 2026 8:45:59 AM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -65,7 +65,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="summary">
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">5</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
@@ -87,18 +87,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
-  <div class="progress-head">
-    <div class="progress-title">keynote564_pembrolizumab / full_v1_20261010</div>
-    <div class="progress-pct">100.00%</div>
-  </div>
-  <div class="bar"><div class="fill" style="width:100%"></div></div>
-  <div class="progress-stats">
-    <span>171,154 / 171,154 calls</span>
-    <span>651 / 651 chunks</span>
-  </div>
-  <div class="eta">Extraction complete</div>
-</div>
-<div class="progress-card">
   <div class="progress-title">partial_nephrectomy / pilot_v6_20261012</div>
   <div class="empty">Progress unavailable: Manifest transfer failed: C:\WINDOWS\System32\OpenSSH\scp.exe: ~/beegfs/llm_extraction/projects/partial_nephrectomy/runs/pilot_v6_20261012/run_manifest.json: No such file or directory</div>
 </div>
@@ -107,30 +95,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <section>
     <h2>Jobs</h2>
     <div class="job">
-  <div class="job-main">
-    <div class="job-name">k564_full</div>
-    <div class="job-id">Job 6608509_0</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill other">CANCELLED</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason"></div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">k564_full</div>
-    <div class="job-id">Job 6608509_3</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill other">CANCELLED</span>
-    <span>46:09</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g007</div>
-</div>
-<div class="job">
   <div class="job-main">
     <div class="job-name">pextract</div>
     <div class="job-id">Job 6626927</div>
@@ -196,7 +160,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-12T08:40:53.9400588-04:00');
+const updatedAt = new Date('2026-10-12T08:45:59.0611015-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
