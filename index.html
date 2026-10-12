@@ -57,20 +57,24 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 12, 2026 9:46:46 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 12, 2026 9:51:52 AM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
+  <div class="progress-title">bsync_prepare</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
   <div class="progress-title">llmx_bsync_pilot2</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
@@ -87,6 +91,54 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
+  <div class="progress-head">
+    <div class="progress-title">bilateral_synchronous / first1</div>
+    <div class="progress-pct">0.00%</div>
+  </div>
+  <div class="bar"><div class="fill" style="width:0%"></div></div>
+  <div class="progress-stats">
+    <span>0 / 18,654 calls</span>
+    <span>0 / 24 chunks</span>
+  </div>
+  <div class="eta">ETA unavailable</div>
+</div>
+<div class="progress-card">
+  <div class="progress-head">
+    <div class="progress-title">bilateral_synchronous / fixcheck1</div>
+    <div class="progress-pct">0.00%</div>
+  </div>
+  <div class="bar"><div class="fill" style="width:0%"></div></div>
+  <div class="progress-stats">
+    <span>0 / 190 calls</span>
+    <span>0 / 1 chunks</span>
+  </div>
+  <div class="eta">ETA unavailable</div>
+</div>
+<div class="progress-card">
+  <div class="progress-head">
+    <div class="progress-title">bilateral_synchronous / presentation_v1n</div>
+    <div class="progress-pct">0.00%</div>
+  </div>
+  <div class="bar"><div class="fill" style="width:0%"></div></div>
+  <div class="progress-stats">
+    <span>0 / 243 calls</span>
+    <span>0 / 10 chunks</span>
+  </div>
+  <div class="eta">ETA unavailable</div>
+</div>
+<div class="progress-card">
+  <div class="progress-head">
+    <div class="progress-title">bilateral_synchronous / presentation_v1r</div>
+    <div class="progress-pct">0.00%</div>
+  </div>
+  <div class="bar"><div class="fill" style="width:0%"></div></div>
+  <div class="progress-stats">
+    <span>0 / 243 calls</span>
+    <span>0 / 10 chunks</span>
+  </div>
+  <div class="eta">ETA unavailable</div>
+</div>
+<div class="progress-card">
   <div class="progress-title">partial_nephrectomy / pilot_v6_20261012</div>
   <div class="empty">Progress unavailable: Manifest transfer failed: C:\WINDOWS\System32\OpenSSH\scp.exe: ~/beegfs/llm_extraction/projects/partial_nephrectomy/runs/pilot_v6_20261012/run_manifest.json: No such file or directory</div>
 </div>
@@ -95,6 +147,18 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <section>
     <h2>Jobs</h2>
     <div class="job">
+  <div class="job-main">
+    <div class="job-name">bsync_prepare</div>
+    <div class="job-id">Job 6627429</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill complete">COMPLETED</span>
+    <span>0:13</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">lri015</div>
+</div>
+<div class="job">
   <div class="job-main">
     <div class="job-name">llmx_bsync_pilot2</div>
     <div class="job-id">Job 6625926</div>
@@ -154,13 +218,61 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="reason">(Priority)</div>
 </div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">llmx_bsync_fixcheck1</div>
+    <div class="job-id">Job 6627432</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(None)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">llmx_bsync_pres_v1r</div>
+    <div class="job-id">Job 6627435</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Dependency)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">llmx_bsync_pres_v1n</div>
+    <div class="job-id">Job 6627434</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Dependency)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">llmx_bsync_first1</div>
+    <div class="job-id">Job 6627433</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Dependency)</div>
+</div>
   </section>
 
   <div class="footer">Status publishes every 5 minutes. Browser refreshes automatically. Progress counts completed chunks.</div>
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-12T09:46:46.0917108-04:00');
+const updatedAt = new Date('2026-10-12T09:51:52.4759319-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
