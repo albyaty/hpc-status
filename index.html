@@ -57,14 +57,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 12, 2026 11:24:07 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 12, 2026 11:29:14 AM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">7</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">8</div><div class="stat-label">Queued</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
@@ -76,6 +76,10 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="progress-card">
   <div class="progress-title">pcraft_rapn</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
+  <div class="progress-title">rapn_full_held</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
@@ -218,13 +222,25 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="reason">(Dependency)</div>
 </div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">rapn_full_held</div>
+    <div class="job-id">Job 6627654</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(JobHeldUser)</div>
+</div>
   </section>
 
   <div class="footer">Status publishes every 5 minutes. Browser refreshes automatically. Progress counts completed chunks.</div>
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-12T11:24:07.8650469-04:00');
+const updatedAt = new Date('2026-10-12T11:29:14.7571591-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
