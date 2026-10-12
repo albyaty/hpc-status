@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 12, 2026 5:14:47 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 12, 2026 5:20:03 AM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -81,14 +81,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">keynote564_pembrolizumab / full_v1_20261010</div>
-    <div class="progress-pct">81.60%</div>
+    <div class="progress-pct">82.06%</div>
   </div>
   <div class="bar"><div class="fill" style="width:82%"></div></div>
   <div class="progress-stats">
-    <span>139,665 / 171,154 calls</span>
-    <span>536 / 651 chunks</span>
+    <span>140,443 / 171,154 calls</span>
+    <span>539 / 651 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 12, 7:53 AM Eastern</div>
+  <div class="eta">Estimated finish: Oct 12, 7:55 AM Eastern</div>
 </div>
 <div class="progress-card">
   <div class="progress-title">partial_nephrectomy / pilot_v5_20261011</div>
@@ -99,6 +99,18 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <section>
     <h2>Jobs</h2>
     <div class="job">
+  <div class="job-main">
+    <div class="job-name">k564_full</div>
+    <div class="job-id">Job 6608509_2</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Resources)</div>
+</div>
+<div class="job">
   <div class="job-main">
     <div class="job-name">k564_full</div>
     <div class="job-id">Job 6608509_3</div>
@@ -114,18 +126,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="job-main">
     <div class="job-name">rapn_runtime_recovery_v5</div>
     <div class="job-id">Job 6625971</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">(Priority)</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">k564_full</div>
-    <div class="job-id">Job 6608509_2</div>
   </div>
   <div class="job-meta">
     <span class="pill pending">PENDING</span>
@@ -165,7 +165,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>4:02:08</span>
+    <span>4:07:24</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -177,7 +177,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>8:28:20</span>
+    <span>8:33:36</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
@@ -188,7 +188,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-12T05:14:47.1263225-04:00');
+const updatedAt = new Date('2026-10-12T05:20:03.9191894-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
