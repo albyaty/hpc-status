@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 7:46:51 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 7:51:58 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -65,16 +65,12 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="summary">
     <div class="stat"><div class="stat-num">3</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">4</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
-  <div class="progress-title">bsync_cx_prepare</div>
-  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
-</div>
-<div class="progress-card">
   <div class="progress-title">pcraft_wide</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
@@ -103,26 +99,22 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="eta">ETA unavailable</div>
 </div>
 <div class="progress-card">
-  <div class="progress-title">partial_nephrectomy / full_v6s_20261013</div>
-  <div class="empty">Progress unavailable: Frozen run identity differs from its discovered project/run or submission receipt.</div>
+  <div class="progress-head">
+    <div class="progress-title">partial_nephrectomy / full_v6s_20261013</div>
+    <div class="progress-pct">2.16%</div>
+  </div>
+  <div class="bar"><div class="fill" style="width:2%"></div></div>
+  <div class="progress-stats">
+    <span>7,249 / 334,835 calls</span>
+    <span>16 / 1,232 chunks</span>
+  </div>
+  <div class="eta">Estimated finish: Oct 14, 6:59 PM Eastern</div>
 </div>
   </section>
 
   <section>
     <h2>Jobs</h2>
     <div class="job">
-  <div class="job-main">
-    <div class="job-name">bsync_cx_prepare</div>
-    <div class="job-id">Job 6636552</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>0:03</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">lri001</div>
-</div>
-<div class="job">
   <div class="job-main">
     <div class="job-name">rapn_takeover_full</div>
     <div class="job-id">Job 6636548</div>
@@ -177,7 +169,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>27:48</span>
+    <span>32:54</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -189,7 +181,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>28:11</span>
+    <span>33:17</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -201,7 +193,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>4:49:11</span>
+    <span>4:54:17</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -212,7 +204,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-13T19:46:51.4697369-04:00');
+const updatedAt = new Date('2026-10-13T19:51:58.3258069-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
