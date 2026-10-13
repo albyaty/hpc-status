@@ -57,25 +57,25 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 1:55:19 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 2:00:27 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
-  <div class="progress-title">pcraft_rapn</div>
+  <div class="progress-title">pextract</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
-  <div class="progress-title">pextract</div>
+  <div class="progress-title">pcraft_rapn</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
@@ -93,14 +93,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">bilateral_synchronous / fixcheck1</div>
-    <div class="progress-pct">0.00%</div>
+    <div class="progress-pct">100.00%</div>
   </div>
-  <div class="bar"><div class="fill" style="width:0%"></div></div>
+  <div class="bar"><div class="fill" style="width:100%"></div></div>
   <div class="progress-stats">
-    <span>0 / 190 calls</span>
-    <span>0 / 1 chunks</span>
+    <span>190 / 190 calls</span>
+    <span>1 / 1 chunks</span>
   </div>
-  <div class="eta">ETA unavailable</div>
+  <div class="eta">Extraction complete</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
@@ -140,11 +140,35 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job-id">Job 6627432</div>
   </div>
   <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
+    <span class="pill complete">COMPLETED</span>
+    <span>2:43</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Resources)</div>
+  <div class="reason">g007</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">pextract</div>
+    <div class="job-id">Job 6626927</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill complete">COMPLETED</span>
+    <span>10:30</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">g007</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">rapn_repair_gpu_v6</div>
+    <div class="job-id">Job 6627057</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill other">FAILED</span>
+    <span>3:57</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(NonZeroExitCode)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -180,7 +204,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Dependency)</div>
+  <div class="reason">(None)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -192,19 +216,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(JobHeldUser)</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">rapn_repair_gpu_v6</div>
-    <div class="job-id">Job 6627057</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>1:39</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g007</div>
+  <div class="reason">(JobHeldAdmin)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -213,19 +225,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>7:38</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g007</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">pextract</div>
-    <div class="job-id">Job 6626927</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>8:40</span>
+    <span>12:46</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -236,7 +236,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-13T13:55:19.8545364-04:00');
+const updatedAt = new Date('2026-10-13T14:00:27.4122869-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
