@@ -57,24 +57,20 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 2:00:27 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 2:05:34 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
-  <div class="progress-title">pextract</div>
-  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
-</div>
-<div class="progress-card">
   <div class="progress-title">pcraft_rapn</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
@@ -148,30 +144,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
-    <div class="job-name">pextract</div>
-    <div class="job-id">Job 6626927</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>10:30</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g007</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">rapn_repair_gpu_v6</div>
-    <div class="job-id">Job 6627057</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill other">FAILED</span>
-    <span>3:57</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">(NonZeroExitCode)</div>
-</div>
-<div class="job">
-  <div class="job-main">
     <div class="job-name">llmx_bsync_pres_v1r</div>
     <div class="job-id">Job 6627435</div>
   </div>
@@ -196,18 +168,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
-    <div class="job-name">llmx_bsync_first1</div>
-    <div class="job-id">Job 6627433</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">(None)</div>
-</div>
-<div class="job">
-  <div class="job-main">
     <div class="job-name">rapn_full_held</div>
     <div class="job-id">Job 6627654</div>
   </div>
@@ -220,12 +180,24 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
+    <div class="job-name">llmx_bsync_first1</div>
+    <div class="job-id">Job 6627433</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill running">RUNNING</span>
+    <span>4:54</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">g007</div>
+</div>
+<div class="job">
+  <div class="job-main">
     <div class="job-name">pcraft_rapn</div>
     <div class="job-id">Job 6626944</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>12:46</span>
+    <span>17:53</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -236,7 +208,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-13T14:00:27.4122869-04:00');
+const updatedAt = new Date('2026-10-13T14:05:34.7539025-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
