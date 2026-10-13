@@ -57,15 +57,15 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 5:40:14 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 5:45:19 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">1</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
@@ -81,20 +81,32 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">bilateral_synchronous / presentation_v1r</div>
-    <div class="progress-pct">92.59%</div>
+    <div class="progress-pct">100.00%</div>
   </div>
-  <div class="bar"><div class="fill" style="width:93%"></div></div>
+  <div class="bar"><div class="fill" style="width:100%"></div></div>
   <div class="progress-stats">
-    <span>225 / 243 calls</span>
-    <span>9 / 10 chunks</span>
+    <span>243 / 243 calls</span>
+    <span>10 / 10 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 13, 5:46 PM Eastern</div>
+  <div class="eta">Extraction complete</div>
 </div>
   </section>
 
   <section>
     <h2>Jobs</h2>
     <div class="job">
+  <div class="job-main">
+    <div class="job-name">llmx_bsync_pres_v1r</div>
+    <div class="job-id">Job 6627435</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill complete">COMPLETED</span>
+    <span>1:20:55</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">g007</div>
+</div>
+<div class="job">
   <div class="job-main">
     <div class="job-name">rapn_takeover_full_held</div>
     <div class="job-id">Job 6635487</div>
@@ -108,24 +120,12 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
-    <div class="job-name">llmx_bsync_pres_v1r</div>
-    <div class="job-id">Job 6627435</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>1:16:36</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g007</div>
-</div>
-<div class="job">
-  <div class="job-main">
     <div class="job-name">pcraft_wide</div>
     <div class="job-id">Job 6635345</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>2:42:36</span>
+    <span>2:47:40</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -136,7 +136,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-13T17:40:14.8275797-04:00');
+const updatedAt = new Date('2026-10-13T17:45:19.6667174-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
