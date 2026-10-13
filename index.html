@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 7:21:30 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 7:26:34 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -65,16 +65,12 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="summary">
     <div class="stat"><div class="stat-num">3</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
-  <div class="progress-title">rapn_takeover_prepare_full</div>
-  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
-</div>
-<div class="progress-card">
   <div class="progress-title">rapn_takeover_full_held</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
@@ -92,24 +88,12 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <h2>Jobs</h2>
     <div class="job">
   <div class="job-main">
-    <div class="job-name">rapn_takeover_prepare_full</div>
-    <div class="job-id">Job 6636514</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>6:38</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">lri003</div>
-</div>
-<div class="job">
-  <div class="job-main">
     <div class="job-name">rapn_takeover_full_held</div>
     <div class="job-id">Job 6635487</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>2:30</span>
+    <span>7:34</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -121,7 +105,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>2:53</span>
+    <span>7:57</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -133,7 +117,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>4:23:53</span>
+    <span>4:28:57</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -144,7 +128,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-13T19:21:30.9274148-04:00');
+const updatedAt = new Date('2026-10-13T19:26:34.8151134-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
