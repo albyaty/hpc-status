@@ -57,20 +57,28 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 3:27:26 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 3:32:33 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">3</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
+  <div class="progress-title">tsrm_prep_reqpilot</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
+  <div class="progress-title">rapn_takeover_full_held</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
   <div class="progress-title">rapn_takeover_pilot_v6</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
@@ -81,14 +89,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">bilateral_synchronous / first1</div>
-    <div class="progress-pct">68.18%</div>
+    <div class="progress-pct">71.54%</div>
   </div>
-  <div class="bar"><div class="fill" style="width:68%"></div></div>
+  <div class="bar"><div class="fill" style="width:72%"></div></div>
   <div class="progress-stats">
-    <span>12,718 / 18,654 calls</span>
-    <span>13 / 24 chunks</span>
+    <span>13,345 / 18,654 calls</span>
+    <span>14 / 24 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 13, 4:06 PM Eastern</div>
+  <div class="eta">Estimated finish: Oct 13, 4:07 PM Eastern</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
@@ -118,11 +126,51 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="progress-title">partial_nephrectomy / pilot_v6_20261012</div>
   <div class="empty">Progress unavailable: Manifest transfer failed: C:\WINDOWS\System32\OpenSSH\scp.exe: ~/beegfs/llm_extraction/projects/partial_nephrectomy/runs/pilot_v6_20261012/run_manifest.json: No such file or directory</div>
 </div>
+<div class="progress-card">
+  <div class="progress-title">transplant_srm / req_pilot</div>
+  <div class="empty">Progress unavailable: Manifest transfer failed: C:\WINDOWS\System32\OpenSSH\scp.exe: ~/beegfs/llm_extraction/projects/transplant_srm/runs/req_pilot/run_manifest.json: No such file or directory</div>
+</div>
   </section>
 
   <section>
     <h2>Jobs</h2>
     <div class="job">
+  <div class="job-main">
+    <div class="job-name">tsrm_prep_reqpilot</div>
+    <div class="job-id">Job 6635488</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">(None)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">rapn_full_held</div>
+    <div class="job-id">Job 6627654</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill other">CANCELLED</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason"></div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">llmx_tsrm_reqpilot</div>
+    <div class="job-id">Job 6635489</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Dependency)</div>
+</div>
+<div class="job">
   <div class="job-main">
     <div class="job-name">llmx_bsync_pres_v1r</div>
     <div class="job-id">Job 6627435</div>
@@ -148,15 +196,15 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
-    <div class="job-name">rapn_full_held</div>
-    <div class="job-id">Job 6627654</div>
+    <div class="job-name">rapn_takeover_full_held</div>
+    <div class="job-id">Job 6635487</div>
   </div>
   <div class="job-meta">
     <span class="pill pending">PENDING</span>
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(JobHeldAdmin)</div>
+  <div class="reason">(JobHeldUser)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -165,7 +213,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>6:46</span>
+    <span>11:52</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -177,7 +225,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>29:45</span>
+    <span>34:51</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -189,7 +237,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1:26:46</span>
+    <span>1:31:52</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -200,7 +248,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-13T15:27:26.2883662-04:00');
+const updatedAt = new Date('2026-10-13T15:32:33.0902788-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
