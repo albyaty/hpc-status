@@ -57,15 +57,15 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 3:58:12 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 4:03:20 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">3</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
@@ -81,14 +81,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">bilateral_synchronous / first1</div>
-    <div class="progress-pct">95.17%</div>
+    <div class="progress-pct">100.00%</div>
   </div>
-  <div class="bar"><div class="fill" style="width:95%"></div></div>
+  <div class="bar"><div class="fill" style="width:100%"></div></div>
   <div class="progress-stats">
-    <span>17,753 / 18,654 calls</span>
-    <span>21 / 24 chunks</span>
+    <span>18,654 / 18,654 calls</span>
+    <span>24 / 24 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 13, 4:03 PM Eastern</div>
+  <div class="eta">Extraction complete</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
@@ -117,20 +117,32 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">transplant_srm / req_pilot</div>
-    <div class="progress-pct">9.74%</div>
+    <div class="progress-pct">14.62%</div>
   </div>
-  <div class="bar"><div class="fill" style="width:10%"></div></div>
+  <div class="bar"><div class="fill" style="width:15%"></div></div>
   <div class="progress-stats">
-    <span>400 / 4,105 calls</span>
-    <span>2 / 21 chunks</span>
+    <span>600 / 4,105 calls</span>
+    <span>3 / 21 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 13, 4:48 PM Eastern</div>
+  <div class="eta">Estimated finish: Oct 13, 4:51 PM Eastern</div>
 </div>
   </section>
 
   <section>
     <h2>Jobs</h2>
     <div class="job">
+  <div class="job-main">
+    <div class="job-name">llmx_bsync_first1</div>
+    <div class="job-id">Job 6627433</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill complete">COMPLETED</span>
+    <span>2:02:34</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">g007</div>
+</div>
+<div class="job">
   <div class="job-main">
     <div class="job-name">llmx_bsync_pres_v1r</div>
     <div class="job-id">Job 6627435</div>
@@ -152,7 +164,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Dependency)</div>
+  <div class="reason">(None)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -173,7 +185,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>8:31</span>
+    <span>13:39</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -185,19 +197,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1:00:30</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g007</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">llmx_bsync_first1</div>
-    <div class="job-id">Job 6627433</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>1:57:31</span>
+    <span>1:05:38</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -208,7 +208,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-13T15:58:12.6955137-04:00');
+const updatedAt = new Date('2026-10-13T16:03:20.0062891-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
