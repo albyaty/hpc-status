@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 3:37:41 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 3:42:47 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -65,16 +65,12 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="summary">
     <div class="stat"><div class="stat-num">3</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">4</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
-  <div class="progress-title">tsrm_prep_reqpilot</div>
-  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
-</div>
-<div class="progress-card">
   <div class="progress-title">rapn_takeover_full_held</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
@@ -89,14 +85,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">bilateral_synchronous / first1</div>
-    <div class="progress-pct">78.34%</div>
+    <div class="progress-pct">81.66%</div>
   </div>
-  <div class="bar"><div class="fill" style="width:78%"></div></div>
+  <div class="bar"><div class="fill" style="width:82%"></div></div>
   <div class="progress-stats">
-    <span>14,613 / 18,654 calls</span>
-    <span>16 / 24 chunks</span>
+    <span>15,233 / 18,654 calls</span>
+    <span>17 / 24 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 13, 4:03 PM Eastern</div>
+  <div class="eta">Estimated finish: Oct 13, 4:04 PM Eastern</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
@@ -139,18 +135,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <section>
     <h2>Jobs</h2>
     <div class="job">
-  <div class="job-main">
-    <div class="job-name">tsrm_prep_reqpilot</div>
-    <div class="job-id">Job 6635488</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>0:13</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">lri003</div>
-</div>
-<div class="job">
   <div class="job-main">
     <div class="job-name">llmx_tsrm_reqpilot</div>
     <div class="job-id">Job 6635489</div>
@@ -205,7 +189,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>17:00</span>
+    <span>22:07</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -217,7 +201,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>39:59</span>
+    <span>45:06</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -229,7 +213,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1:37:00</span>
+    <span>1:42:07</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -240,7 +224,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-13T15:37:41.0006155-04:00');
+const updatedAt = new Date('2026-10-13T15:42:47.9873467-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
