@@ -57,22 +57,50 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 7:41:45 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 7:46:51 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">3</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
+  <div class="progress-title">bsync_cx_prepare</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
   <div class="progress-title">pcraft_wide</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
+  <div class="progress-head">
+    <div class="progress-title">bilateral_synchronous / complication_v1n</div>
+    <div class="progress-pct">0.00%</div>
+  </div>
+  <div class="bar"><div class="fill" style="width:0%"></div></div>
+  <div class="progress-stats">
+    <span>0 / 405 calls</span>
+    <span>0 / 17 chunks</span>
+  </div>
+  <div class="eta">ETA unavailable</div>
+</div>
+<div class="progress-card">
+  <div class="progress-head">
+    <div class="progress-title">bilateral_synchronous / complication_v1r</div>
+    <div class="progress-pct">0.00%</div>
+  </div>
+  <div class="bar"><div class="fill" style="width:0%"></div></div>
+  <div class="progress-stats">
+    <span>0 / 405 calls</span>
+    <span>0 / 17 chunks</span>
+  </div>
+  <div class="eta">ETA unavailable</div>
 </div>
 <div class="progress-card">
   <div class="progress-title">partial_nephrectomy / full_v6s_20261013</div>
@@ -83,6 +111,18 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <section>
     <h2>Jobs</h2>
     <div class="job">
+  <div class="job-main">
+    <div class="job-name">bsync_cx_prepare</div>
+    <div class="job-id">Job 6636552</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill complete">COMPLETED</span>
+    <span>0:03</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">lri001</div>
+</div>
+<div class="job">
   <div class="job-main">
     <div class="job-name">rapn_takeover_full</div>
     <div class="job-id">Job 6636548</div>
@@ -108,12 +148,36 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
+    <div class="job-name">llmx_bsync_cx_v1n</div>
+    <div class="job-id">Job 6636553</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Priority)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">llmx_bsync_cx_v1r</div>
+    <div class="job-id">Job 6636554</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Dependency)</div>
+</div>
+<div class="job">
+  <div class="job-main">
     <div class="job-name">rapn_takeover_full_held</div>
     <div class="job-id">Job 6635487</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>22:43</span>
+    <span>27:48</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -125,7 +189,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>23:06</span>
+    <span>28:11</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -137,7 +201,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>4:44:06</span>
+    <span>4:49:11</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -148,7 +212,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-13T19:41:45.1106710-04:00');
+const updatedAt = new Date('2026-10-13T19:46:51.4697369-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
