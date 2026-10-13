@@ -57,20 +57,24 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 7:51:58 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 13, 2026 7:57:04 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">3</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Queued</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
+  <div class="progress-title">pcraft_seeds</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
   <div class="progress-title">pcraft_wide</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
@@ -101,14 +105,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">partial_nephrectomy / full_v6s_20261013</div>
-    <div class="progress-pct">2.16%</div>
+    <div class="progress-pct">2.36%</div>
   </div>
   <div class="bar"><div class="fill" style="width:2%"></div></div>
   <div class="progress-stats">
-    <span>7,249 / 334,835 calls</span>
-    <span>16 / 1,232 chunks</span>
+    <span>7,916 / 334,835 calls</span>
+    <span>18 / 1,232 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 14, 6:59 PM Eastern</div>
+  <div class="eta">Estimated finish: Oct 14, 7:10 PM Eastern</div>
 </div>
   </section>
 
@@ -152,6 +156,18 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
+    <div class="job-name">pcraft_seeds</div>
+    <div class="job-id">Job 6636567</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Priority)</div>
+</div>
+<div class="job">
+  <div class="job-main">
     <div class="job-name">llmx_bsync_cx_v1r</div>
     <div class="job-id">Job 6636554</div>
   </div>
@@ -169,7 +185,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>32:54</span>
+    <span>38:01</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -181,7 +197,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>33:17</span>
+    <span>38:24</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -193,7 +209,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>4:54:17</span>
+    <span>4:59:24</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -204,7 +220,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-13T19:51:58.3258069-04:00');
+const updatedAt = new Date('2026-10-13T19:57:04.8121280-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
