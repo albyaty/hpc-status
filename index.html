@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 14, 2026 2:50:12 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 14, 2026 2:55:42 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -65,7 +65,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="summary">
     <div class="stat"><div class="stat-num">3</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">3</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
@@ -77,14 +77,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">bilateral_synchronous / complication_v1n</div>
-    <div class="progress-pct">0.00%</div>
+    <div class="progress-pct">6.17%</div>
   </div>
-  <div class="bar"><div class="fill" style="width:0%"></div></div>
+  <div class="bar"><div class="fill" style="width:6%"></div></div>
   <div class="progress-stats">
-    <span>0 / 405 calls</span>
-    <span>0 / 17 chunks</span>
+    <span>25 / 405 calls</span>
+    <span>1 / 17 chunks</span>
   </div>
-  <div class="eta">ETA unavailable</div>
+  <div class="eta">Estimated finish: Oct 14, 3:32 PM Eastern</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
@@ -101,32 +101,20 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">partial_nephrectomy / full_v6s_20261013</div>
-    <div class="progress-pct">89.64%</div>
+    <div class="progress-pct">89.88%</div>
   </div>
   <div class="bar"><div class="fill" style="width:90%"></div></div>
   <div class="progress-stats">
-    <span>300,149 / 334,835 calls</span>
-    <span>1,145 / 1,232 chunks</span>
+    <span>300,949 / 334,835 calls</span>
+    <span>1,147 / 1,232 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 14, 5:56 PM Eastern</div>
+  <div class="eta">Estimated finish: Oct 14, 5:57 PM Eastern</div>
 </div>
   </section>
 
   <section>
     <h2>Jobs</h2>
     <div class="job">
-  <div class="job-main">
-    <div class="job-name">rapn_takeover_full</div>
-    <div class="job-id">Job 6636548</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill other">CANCELLED</span>
-    <span>15:14:39</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g007</div>
-</div>
-<div class="job">
   <div class="job-main">
     <div class="job-name">pcraft_seeds</div>
     <div class="job-id">Job 6636567</div>
@@ -169,7 +157,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>0:00</span>
+    <span>5:31</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -181,7 +169,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>19:30:44</span>
+    <span>19:36:15</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -193,7 +181,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>19:31:07</span>
+    <span>19:36:38</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -204,7 +192,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-14T14:50:12.5314699-04:00');
+const updatedAt = new Date('2026-10-14T14:55:42.4854073-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
