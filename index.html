@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 14, 2026 10:57:12 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 14, 2026 2:22:42 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -99,8 +99,16 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="eta">ETA unavailable</div>
 </div>
 <div class="progress-card">
-  <div class="progress-title">partial_nephrectomy / full_v6s_20261013</div>
-  <div class="empty">Progress unavailable: Completion metadata transfer failed: </div>
+  <div class="progress-head">
+    <div class="progress-title">partial_nephrectomy / full_v6s_20261013</div>
+    <div class="progress-pct">86.40%</div>
+  </div>
+  <div class="bar"><div class="fill" style="width:86%"></div></div>
+  <div class="progress-stats">
+    <span>289,284 / 334,835 calls</span>
+    <span>1,124 / 1,232 chunks</span>
+  </div>
+  <div class="eta">Estimated finish: Oct 14, 5:07 PM Eastern</div>
 </div>
   </section>
 
@@ -161,7 +169,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>10:53:44</span>
+    <span>14:47:37</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -173,7 +181,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>15:09:23</span>
+    <span>19:03:16</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -185,7 +193,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>15:09:46</span>
+    <span>19:03:39</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -196,7 +204,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-14T10:57:12.6420823-04:00');
+const updatedAt = new Date('2026-10-14T14:22:42.4408636-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
