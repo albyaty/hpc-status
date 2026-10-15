@@ -57,22 +57,50 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 15, 2026 3:56:48 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 15, 2026 4:01:55 AM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Queued</div></div>
     <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
-  <div class="progress-title">rapn_takeover_bundles_pilot</div>
+  <div class="progress-title">rapn_takeover_bundles_prepare_full</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
+  <div class="progress-title">rapn_takeover_bundles_collect_full</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
+  <div class="progress-head">
+    <div class="progress-title">partial_nephrectomy / bundles_full_v1n</div>
+    <div class="progress-pct">0.00%</div>
+  </div>
+  <div class="bar"><div class="fill" style="width:0%"></div></div>
+  <div class="progress-stats">
+    <span>0 / 4,747 calls</span>
+    <span>0 / 190 chunks</span>
+  </div>
+  <div class="eta">ETA unavailable</div>
+</div>
+<div class="progress-card">
+  <div class="progress-head">
+    <div class="progress-title">partial_nephrectomy / bundles_full_v1r</div>
+    <div class="progress-pct">0.00%</div>
+  </div>
+  <div class="bar"><div class="fill" style="width:0%"></div></div>
+  <div class="progress-stats">
+    <span>0 / 4,747 calls</span>
+    <span>0 / 190 chunks</span>
+  </div>
+  <div class="eta">ETA unavailable</div>
 </div>
   </section>
 
@@ -80,12 +108,48 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <h2>Jobs</h2>
     <div class="job">
   <div class="job-main">
-    <div class="job-name">rapn_takeover_bundles_pilot</div>
-    <div class="job-id">Job 6638720</div>
+    <div class="job-name">rapn_takeover_bundles_prepare_full</div>
+    <div class="job-id">Job 6638725</div>
   </div>
   <div class="job-meta">
     <span class="pill complete">COMPLETED</span>
-    <span>31:50</span>
+    <span>0:14</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">lri000</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">rapn_takeover_bundles_collect_full</div>
+    <div class="job-id">Job 6638728</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">(Dependency)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">rapn_takeover_bundles_full</div>
+    <div class="job-id">Job 6638726</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill running">RUNNING</span>
+    <span>2:06</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">g007</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">rapn_takeover_bundles_full</div>
+    <div class="job-id">Job 6638727</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill running">RUNNING</span>
+    <span>2:06</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -96,7 +160,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-15T03:56:48.8796920-04:00');
+const updatedAt = new Date('2026-10-15T04:01:55.8619943-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
