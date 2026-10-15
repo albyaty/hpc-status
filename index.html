@@ -57,15 +57,15 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 15, 2026 2:02:58 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 15, 2026 2:08:03 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
@@ -77,14 +77,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">partial_nephrectomy / medpass_v1</div>
-    <div class="progress-pct">92.73%</div>
+    <div class="progress-pct">100.00%</div>
   </div>
-  <div class="bar"><div class="fill" style="width:93%"></div></div>
+  <div class="bar"><div class="fill" style="width:100%"></div></div>
   <div class="progress-stats">
-    <span>12,400 / 13,372 calls</span>
-    <span>31 / 34 chunks</span>
+    <span>13,372 / 13,372 calls</span>
+    <span>34 / 34 chunks</span>
   </div>
-  <div class="eta">Estimated finish: Oct 15, 2:09 PM Eastern</div>
+  <div class="eta">Extraction complete</div>
 </div>
   </section>
 
@@ -96,11 +96,11 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job-id">Job 6640301</div>
   </div>
   <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
+    <span class="pill complete">COMPLETED</span>
+    <span>0:27</span>
     <span>defq</span>
   </div>
-  <div class="reason">(Dependency)</div>
+  <div class="reason">lri022</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -108,8 +108,8 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job-id">Job 6640300</div>
   </div>
   <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>1:08:15</span>
+    <span class="pill complete">COMPLETED</span>
+    <span>1:11:56</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -120,8 +120,8 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job-id">Job 6638734</div>
   </div>
   <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>1:36:32</span>
+    <span class="pill complete">COMPLETED</span>
+    <span>1:39:44</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -132,7 +132,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-15T14:02:58.1461404-04:00');
+const updatedAt = new Date('2026-10-15T14:08:03.1217641-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
