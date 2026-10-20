@@ -57,14 +57,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 20, 2026 3:44:53 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 20, 2026 3:49:57 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">Queued</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
@@ -84,6 +84,10 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="progress-card">
   <div class="progress-title">pcraft_registry</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
+  <div class="progress-title">pcraft_registry_path</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
@@ -144,6 +148,18 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
+    <div class="job-name">pcraft_registry_path</div>
+    <div class="job-id">Job 6652481</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Priority)</div>
+</div>
+<div class="job">
+  <div class="job-main">
     <div class="job-name">rapn_takeover_reserve</div>
     <div class="job-id">Job 6649725</div>
   </div>
@@ -160,7 +176,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-20T15:44:53.3037974-04:00');
+const updatedAt = new Date('2026-10-20T15:49:57.3470899-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
