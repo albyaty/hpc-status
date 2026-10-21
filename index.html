@@ -57,20 +57,32 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 21, 2026 6:07:57 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 21, 2026 6:13:01 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Queued</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
+  <div class="progress-title">pmap_prep_v3dev</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
+  <div class="progress-title">llmx_v3dev_4b_w4a16</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
+  <div class="progress-title">llmx_v3dev_4b</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
   <div class="progress-title">rapn_takeover_reserve</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
@@ -79,6 +91,42 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <section>
     <h2>Jobs</h2>
     <div class="job">
+  <div class="job-main">
+    <div class="job-name">pmap_prep_v3dev</div>
+    <div class="job-id">Job 6656134</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">(None)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">llmx_v3dev_4b_w4a16</div>
+    <div class="job-id">Job 6656136</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Dependency)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">llmx_v3dev_4b</div>
+    <div class="job-id">Job 6656135</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Dependency)</div>
+</div>
+<div class="job">
   <div class="job-main">
     <div class="job-name">rapn_takeover_reserve</div>
     <div class="job-id">Job 6649725</div>
@@ -96,7 +144,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-21T18:07:57.4204725-04:00');
+const updatedAt = new Date('2026-10-21T18:13:01.2924714-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
