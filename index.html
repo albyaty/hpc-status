@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 22, 2026 10:50:05 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 22, 2026 10:55:09 AM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -65,24 +65,12 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="summary">
     <div class="stat"><div class="stat-num">5</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">7</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
-  <div class="progress-title">aiage_scanprep</div>
-  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
-</div>
-<div class="progress-card">
-  <div class="progress-title">aiage_scanprep</div>
-  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
-</div>
-<div class="progress-card">
-  <div class="progress-title">aiage_kits</div>
-  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
-</div>
-<div class="progress-card">
   <div class="progress-title">aiage_kits</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
@@ -144,42 +132,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <h2>Jobs</h2>
     <div class="job">
   <div class="job-main">
-    <div class="job-name">aiage_scanprep</div>
-    <div class="job-id">Job 6658451_0</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>9:08</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">lri027</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">aiage_scanprep</div>
-    <div class="job-id">Job 6658451_23</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>6:12</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">lri023</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">aiage_kits</div>
-    <div class="job-id">Job 6657830_6</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>1:23:35</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">lri067</div>
-</div>
-<div class="job">
-  <div class="job-main">
     <div class="job-name">aiage_kits</div>
     <div class="job-id">Job 6657830_8</div>
   </div>
@@ -221,7 +173,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1:26:28</span>
+    <span>1:31:32</span>
     <span>defq</span>
   </div>
   <div class="reason">lri058</div>
@@ -233,7 +185,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1:26:28</span>
+    <span>1:31:32</span>
     <span>defq</span>
   </div>
   <div class="reason">lri058</div>
@@ -245,7 +197,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1:26:28</span>
+    <span>1:31:32</span>
     <span>defq</span>
   </div>
   <div class="reason">lri059</div>
@@ -257,7 +209,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1:26:28</span>
+    <span>1:31:32</span>
     <span>defq</span>
   </div>
   <div class="reason">lri067</div>
@@ -269,7 +221,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1:26:28</span>
+    <span>1:31:32</span>
     <span>defq</span>
   </div>
   <div class="reason">lri068</div>
@@ -352,7 +304,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-22T10:50:05.9771362-04:00');
+const updatedAt = new Date('2026-10-22T10:55:09.5280930-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
