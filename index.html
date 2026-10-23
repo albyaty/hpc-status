@@ -57,13 +57,13 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 23, 2026 9:42:46 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 23, 2026 9:47:50 AM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">1</div><div class="stat-label">Queued</div></div>
     <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
   </div>
@@ -71,15 +71,11 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
-  <div class="progress-title">pextract_team27</div>
+  <div class="progress-title">pextract_team4b</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
   <div class="progress-title">rapn_takeover_reserve</div>
-  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
-</div>
-<div class="progress-card">
-  <div class="progress-title">pextract_team4b</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
   </section>
@@ -88,12 +84,12 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <h2>Jobs</h2>
     <div class="job">
   <div class="job-main">
-    <div class="job-name">pextract_team27</div>
-    <div class="job-id">Job 6658886</div>
+    <div class="job-name">pextract_team4b</div>
+    <div class="job-id">Job 6658887</div>
   </div>
   <div class="job-meta">
     <span class="pill complete">COMPLETED</span>
-    <span>21:56</span>
+    <span>1:58</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
@@ -110,25 +106,13 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="reason">(JobHeldUser)</div>
 </div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">pextract_team4b</div>
-    <div class="job-id">Job 6658887</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>0:43</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g010</div>
-</div>
   </section>
 
   <div class="footer">Status publishes every 5 minutes. Browser refreshes automatically. Progress counts completed chunks.</div>
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-23T09:42:46.4224889-04:00');
+const updatedAt = new Date('2026-10-23T09:47:50.7488887-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
