@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 24, 2026 1:45:25 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 24, 2026 1:50:31 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -72,7 +72,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <h2>Extraction progress</h2>
     <div class="progress-card">
   <div class="progress-title">rapn_takeover_reserve</div>
-  <div class="empty">Progress unavailable: Native Slurm submission lookup failed: ssh: connect to host 10.88.8.31 port 22: Connection timed out</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
   </section>
 
@@ -96,7 +96,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-24T13:45:25.9643329-04:00');
+const updatedAt = new Date('2026-10-24T13:50:31.4156237-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
