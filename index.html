@@ -57,13 +57,13 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 29, 2026 6:53:29 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 29, 2026 6:58:34 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">99</div><div class="stat-label">Queued</div></div>
     <div class="stat"><div class="stat-num">2</div><div class="stat-label">Other</div></div>
   </div>
@@ -487,10 +487,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
-  <div class="progress-title">chemo_scaninfer</div>
-  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
-</div>
-<div class="progress-card">
   <div class="progress-title">rapn_takeover_reserve</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
@@ -501,14 +497,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job">
   <div class="job-main">
     <div class="job-name">chemo_scaninfer</div>
-    <div class="job-id">Job 6702445_6</div>
+    <div class="job-id">Job 6702445_19</div>
   </div>
   <div class="job-meta">
     <span class="pill complete">COMPLETED</span>
-    <span>5:26:38</span>
+    <span>5:30:09</span>
     <span>defq</span>
   </div>
-  <div class="reason">lri041</div>
+  <div class="reason">lri026</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -1705,7 +1701,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>5:29:59</span>
+    <span>5:35:04</span>
     <span>defq</span>
   </div>
   <div class="reason">lri035</div>
@@ -1717,7 +1713,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>5:29:59</span>
+    <span>5:35:04</span>
     <span>defq</span>
   </div>
   <div class="reason">lri041</div>
@@ -1729,7 +1725,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>5:29:59</span>
+    <span>5:35:04</span>
     <span>defq</span>
   </div>
   <div class="reason">lri041</div>
@@ -1741,22 +1737,10 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>5:29:59</span>
+    <span>5:35:04</span>
     <span>defq</span>
   </div>
   <div class="reason">lri025</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">chemo_scaninfer</div>
-    <div class="job-id">Job 6702445_19</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>5:29:59</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">lri026</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -1776,7 +1760,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-29T18:53:29.0965976-04:00');
+const updatedAt = new Date('2026-10-29T18:58:34.3703804-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
