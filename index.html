@@ -57,15 +57,15 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Oct 30, 2026 12:45:29 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Oct 30, 2026 12:50:34 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">173</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">171</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
@@ -2833,7 +2833,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>16:45:06</span>
+    <span>16:50:12</span>
     <span>defq</span>
   </div>
   <div class="reason">lri059</div>
@@ -2844,11 +2844,11 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job-id">Job 6705375</div>
   </div>
   <div class="job-meta">
-    <span class="pill pending">PENDING</span>
+    <span class="pill other">CANCELLED</span>
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Priority)</div>
+  <div class="reason"></div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -2856,11 +2856,11 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job-id">Job 6705376</div>
   </div>
   <div class="job-meta">
-    <span class="pill pending">PENDING</span>
+    <span class="pill other">CANCELLED</span>
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(JobHeldUser)</div>
+  <div class="reason"></div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -2880,7 +2880,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-10-30T12:45:29.0233816-04:00');
+const updatedAt = new Date('2026-10-30T12:50:34.2323914-04:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
