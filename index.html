@@ -57,15 +57,15 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 10, 2026 2:38:01 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 10, 2026 2:43:04 AM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">2</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
@@ -93,26 +93,26 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job">
   <div class="job-main">
     <div class="job-name">wml_rehearsal</div>
-    <div class="job-id">Job 6783008</div>
+    <div class="job-id">Job 6783009</div>
   </div>
   <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>31:10</span>
+    <span class="pill complete">COMPLETED</span>
+    <span>31:13</span>
     <span>defq</span>
   </div>
-  <div class="reason">lri040</div>
+  <div class="reason">lri044</div>
 </div>
 <div class="job">
   <div class="job-main">
     <div class="job-name">wml_rehearsal</div>
-    <div class="job-id">Job 6783009</div>
+    <div class="job-id">Job 6783008</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>31:10</span>
+    <span>36:13</span>
     <span>defq</span>
   </div>
-  <div class="reason">lri044</div>
+  <div class="reason">lri040</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -144,7 +144,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-10T02:38:01.9182188-05:00');
+const updatedAt = new Date('2026-11-10T02:43:04.8736606-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
