@@ -57,7 +57,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 9, 2026 8:28:23 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 9, 2026 8:33:27 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -65,16 +65,12 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="summary">
     <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">5</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
-  <div class="progress-title">wml_prefetch</div>
-  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
-</div>
-<div class="progress-card">
   <div class="progress-title">wml_prefetch</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
@@ -105,23 +101,11 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job">
   <div class="job-main">
     <div class="job-name">wml_prefetch</div>
-    <div class="job-id">Job 6777003</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>14:20</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">lri048</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">wml_prefetch</div>
     <div class="job-id">Job 6776998</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>16:46</span>
+    <span>21:50</span>
     <span>defq</span>
   </div>
   <div class="reason">lri050</div>
@@ -192,7 +176,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-09T20:28:23.5228994-05:00');
+const updatedAt = new Date('2026-11-09T20:33:27.2372194-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
