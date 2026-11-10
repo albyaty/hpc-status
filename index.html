@@ -57,33 +57,33 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 10, 2026 3:10:44 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 10, 2026 3:15:52 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">3</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
-  <div class="progress-title">wml_rehearsal</div>
+  <div class="progress-title">wml_probe</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
-  <div class="progress-title">job_data_held</div>
+  <div class="progress-title">wml_academic_gen1</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
-  <div class="progress-title">job_data_held</div>
+  <div class="progress-title">wml_academic_gen2</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
-  <div class="progress-title">job_data_held</div>
+  <div class="progress-title">wml_academic_gen0</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
@@ -96,31 +96,19 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <h2>Jobs</h2>
     <div class="job">
   <div class="job-main">
-    <div class="job-name">wml_rehearsal</div>
-    <div class="job-id">Job 6790304</div>
+    <div class="job-name">wml_probe</div>
+    <div class="job-id">Job 6790329</div>
   </div>
   <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>10:23</span>
-    <span>bigmem</span>
+    <span class="pill running">RUNNING</span>
+    <span>4:30</span>
+    <span>defq</span>
   </div>
-  <div class="reason">b011</div>
+  <div class="reason">lri003</div>
 </div>
 <div class="job">
   <div class="job-main">
-    <div class="job-name">job_data_held</div>
-    <div class="job-id">Job 6790306</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">(JobHeldUser)</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">job_data_held</div>
+    <div class="job-name">wml_academic_gen1</div>
     <div class="job-id">Job 6790305</div>
   </div>
   <div class="job-meta">
@@ -128,11 +116,23 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(JobHeldUser)</div>
+  <div class="reason">(Priority)</div>
 </div>
 <div class="job">
   <div class="job-main">
-    <div class="job-name">job_data_held</div>
+    <div class="job-name">wml_academic_gen2</div>
+    <div class="job-id">Job 6790306</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Priority)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">wml_academic_gen0</div>
     <div class="job-id">Job 6751420</div>
   </div>
   <div class="job-meta">
@@ -140,7 +140,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>0:00</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(JobHeldUser)</div>
+  <div class="reason">(Resources)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -149,7 +149,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>10:49</span>
+    <span>15:57</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -160,7 +160,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-10T15:10:44.2576316-05:00');
+const updatedAt = new Date('2026-11-10T15:15:52.2752477-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
