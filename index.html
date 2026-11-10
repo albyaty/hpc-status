@@ -57,15 +57,15 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 9, 2026 11:15:30 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 9, 2026 11:20:33 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
@@ -93,26 +93,26 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job">
   <div class="job-main">
     <div class="job-name">wml_rehearsal</div>
-    <div class="job-id">Job 6780042</div>
+    <div class="job-id">Job 6780043</div>
   </div>
   <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>defq,bigmem</span>
+    <span class="pill other">FAILED</span>
+    <span>0:24</span>
+    <span>defq</span>
   </div>
-  <div class="reason">(Priority)</div>
+  <div class="reason">(NonZeroExitCode)</div>
 </div>
 <div class="job">
   <div class="job-main">
     <div class="job-name">wml_rehearsal</div>
-    <div class="job-id">Job 6780043</div>
+    <div class="job-id">Job 6780042</div>
   </div>
   <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>defq,bigmem</span>
+    <span class="pill running">RUNNING</span>
+    <span>0:30</span>
+    <span>defq</span>
   </div>
-  <div class="reason">(Priority)</div>
+  <div class="reason">lri019</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -144,7 +144,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-09T23:15:30.8679544-05:00');
+const updatedAt = new Date('2026-11-09T23:20:33.9502061-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
