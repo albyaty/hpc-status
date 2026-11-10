@@ -57,29 +57,37 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 9, 2026 8:18:14 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 9, 2026 8:23:18 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
+  <div class="progress-title">wml_prefetch</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
+  <div class="progress-title">wml_prefetch</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
   <div class="progress-title">wml_rehearsal</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
-  <div class="progress-title">wml_prefetch</div>
+  <div class="progress-title">wml_rehearsal</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
-  <div class="progress-title">wml_prefetch</div>
+  <div class="progress-title">wml_check_models</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
@@ -96,24 +104,12 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <h2>Jobs</h2>
     <div class="job">
   <div class="job-main">
-    <div class="job-name">wml_rehearsal</div>
-    <div class="job-id">Job 6777031</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>1:08</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">lri001</div>
-</div>
-<div class="job">
-  <div class="job-main">
     <div class="job-name">wml_prefetch</div>
     <div class="job-id">Job 6776998</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>6:38</span>
+    <span>11:42</span>
     <span>defq</span>
   </div>
   <div class="reason">lri050</div>
@@ -125,10 +121,46 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>6:38</span>
+    <span>11:42</span>
     <span>defq</span>
   </div>
   <div class="reason">lri048</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">wml_rehearsal</div>
+    <div class="job-id">Job 6777428</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>defq,bigmem</span>
+  </div>
+  <div class="reason">(Dependency)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">wml_rehearsal</div>
+    <div class="job-id">Job 6777427</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>defq,bigmem</span>
+  </div>
+  <div class="reason">(Dependency)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">wml_check_models</div>
+    <div class="job-id">Job 6777420</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>defq,bigmem</span>
+  </div>
+  <div class="reason">(Dependency)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -160,7 +192,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-09T20:18:14.9054226-05:00');
+const updatedAt = new Date('2026-11-09T20:23:18.8584430-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
