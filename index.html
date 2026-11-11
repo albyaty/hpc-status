@@ -57,20 +57,24 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 11, 2026 2:00:21 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 11, 2026 2:05:25 AM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">4</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">47</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">48</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
+  <div class="progress-title">prep_urosymph_keyset1</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
   <div class="progress-title">chemo_scaninfer</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
@@ -271,6 +275,10 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
+  <div class="progress-title">llmx_urosymph_keyset_v1</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
   <div class="progress-title">wml_academic_edit</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
@@ -279,6 +287,18 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <section>
     <h2>Jobs</h2>
     <div class="job">
+  <div class="job-main">
+    <div class="job-name">prep_urosymph_keyset1</div>
+    <div class="job-id">Job 6791748</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill complete">COMPLETED</span>
+    <span>0:52</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">lri066</div>
+</div>
+<div class="job">
   <div class="job-main">
     <div class="job-name">chemo_scaninfer</div>
     <div class="job-id">Job 6790789_0</div>
@@ -837,7 +857,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>11:35</span>
+    <span>16:39</span>
     <span>defq</span>
   </div>
   <div class="reason">lri055</div>
@@ -849,7 +869,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>51:40</span>
+    <span>56:44</span>
     <span>defq</span>
   </div>
   <div class="reason">lri066</div>
@@ -861,7 +881,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>3:35:54</span>
+    <span>3:40:58</span>
     <span>defq</span>
   </div>
   <div class="reason">lri046</div>
@@ -880,12 +900,24 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
+    <div class="job-name">llmx_urosymph_keyset_v1</div>
+    <div class="job-id">Job 6791749</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Priority)</div>
+</div>
+<div class="job">
+  <div class="job-main">
     <div class="job-name">wml_academic_edit</div>
     <div class="job-id">Job 6790426</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>5:48:20</span>
+    <span>5:53:24</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -896,7 +928,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-11T02:00:21.2155027-05:00');
+const updatedAt = new Date('2026-11-11T02:05:25.2577512-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
