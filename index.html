@@ -57,14 +57,14 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 11, 2026 2:20:38 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 11, 2026 2:25:42 AM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">48</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">47</div><div class="stat-label">Queued</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
@@ -247,11 +247,11 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
-  <div class="progress-title">chemo_scaninfer</div>
+  <div class="progress-title">chemo_collect</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
-  <div class="progress-title">chemo_collect</div>
+  <div class="progress-title">chemo_scaninfer</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
@@ -573,18 +573,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="job">
   <div class="job-main">
     <div class="job-name">chemo_scaninfer</div>
-    <div class="job-id">Job 6790788_3</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>defq</span>
-  </div>
-  <div class="reason">(Priority)</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">chemo_scaninfer</div>
     <div class="job-id">Job 6790788_4</div>
   </div>
   <div class="job-meta">
@@ -837,11 +825,23 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="job">
   <div class="job-main">
     <div class="job-name">chemo_scaninfer</div>
+    <div class="job-id">Job 6790788_3</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill running">RUNNING</span>
+    <span>4:52</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">lri059</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">chemo_scaninfer</div>
     <div class="job-id">Job 6790788_2</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>31:52</span>
+    <span>36:56</span>
     <span>defq</span>
   </div>
   <div class="reason">lri055</div>
@@ -853,7 +853,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1:11:57</span>
+    <span>1:17:01</span>
     <span>defq</span>
   </div>
   <div class="reason">lri066</div>
@@ -865,7 +865,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>3:56:11</span>
+    <span>4:01:15</span>
     <span>defq</span>
   </div>
   <div class="reason">lri046</div>
@@ -901,7 +901,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>6:08:37</span>
+    <span>6:13:41</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -912,7 +912,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-11T02:20:38.6513091-05:00');
+const updatedAt = new Date('2026-11-11T02:25:42.0560827-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
