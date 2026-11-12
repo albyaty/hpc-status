@@ -57,21 +57,25 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 12, 2026 7:21:49 AM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 12, 2026 7:26:55 AM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">11</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">12</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
   <div class="progress-title">prep_urosymph_fix2</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
+  <div class="progress-title">prep_urosymph_check</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
@@ -132,11 +136,23 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job-id">Job 6794783</div>
   </div>
   <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>18:35</span>
+    <span class="pill complete">COMPLETED</span>
+    <span>18:50</span>
     <span>defq</span>
   </div>
   <div class="reason">lri066</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">prep_urosymph_check</div>
+    <div class="job-id">Job 6794803</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>defq</span>
+  </div>
+  <div class="reason">(Priority)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -277,7 +293,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1:41:31</span>
+    <span>1:46:37</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
@@ -288,7 +304,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-12T07:21:49.6535939-05:00');
+const updatedAt = new Date('2026-11-12T07:26:55.1030975-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
