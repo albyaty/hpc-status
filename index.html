@@ -57,21 +57,25 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 11, 2026 8:32:00 PM Eastern</span> Â· <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 11, 2026 8:37:03 PM Eastern</span> Â· <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
     <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
   <div class="progress-title">wml_rehearsal</div>
+  <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
+</div>
+<div class="progress-card">
+  <div class="progress-title">wml_probe_prompts</div>
   <div class="empty">Progress unavailable: No identifiable extraction run in Slurm arguments or local submission receipts.</div>
 </div>
 <div class="progress-card">
@@ -105,14 +109,26 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job">
   <div class="job-main">
     <div class="job-name">wml_rehearsal</div>
-    <div class="job-id">Job 6793977</div>
+    <div class="job-id">Job 6794141</div>
   </div>
   <div class="job-meta">
-    <span class="pill other">FAILED</span>
-    <span>1:46:53</span>
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
     <span>bigmem</span>
   </div>
-  <div class="reason">(NonZeroExitCode)</div>
+  <div class="reason">(None)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">wml_probe_prompts</div>
+    <div class="job-id">Job 6794140</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>bigmem</span>
+  </div>
+  <div class="reason">(None)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -181,7 +197,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>7:20</span>
+    <span>12:24</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
@@ -192,7 +208,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-11T20:32:00.3524198-05:00');
+const updatedAt = new Date('2026-11-11T20:37:03.9636561-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
