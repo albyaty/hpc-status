@@ -63,15 +63,15 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 17, 2026 3:49:43 PM Eastern</span> &middot; <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 17, 2026 3:55:47 PM Eastern</span> &middot; <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">16</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">15</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
@@ -85,32 +85,25 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="progress-stats">
     <span>792,721 / 792,721 calls</span>
     <span>1,109 / 1,109 chunks</span>
-    <span>5 GPUs running, 1 queued</span>
+    <span>1 GPU running, 1 queued</span>
   </div>
   <div class="eta">Extraction complete</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">urosymphyseal_fistula / case_full_v1</div>
-    <div class="progress-pct">99.93%</div>
+    <div class="progress-pct">100.00%</div>
   </div>
   <div class="bar"><div class="fill" style="width:100%"></div></div>
   <div class="progress-stats">
-    <span>57,210 / 57,252 calls</span>
-    <span>1,907 / 1,909 chunks</span>
-    <span>5 GPUs running, 1 queued</span>
+    <span>57,252 / 57,252 calls</span>
+    <span>1,909 / 1,909 chunks</span>
+    <span>1 GPU running, 1 queued</span>
   </div>
-  <div class="eta">Estimated finish: Nov 17, 3:51 PM Eastern</div>
-</div>
-<div class="progress-card waiting">
-  <div class="progress-head">
-    <div class="progress-title">urosymphyseal_fistula / win_full_v1</div>
-    <div class="progress-pct muted">0%</div>
-  </div>
-  <div class="eta">Not started yet; starts after case_full_v1.</div>
+  <div class="eta">Extraction complete</div>
 </div>
 <div class="untracked"><div class="untracked-head">No progress for these jobs</div>
-<div class="untracked-row"><span class="untracked-why">Not an extraction run (its task names no project run).</span> 6794724_0 (usf_data_held), 6794724_1 (usf_data_held), 6794724_2 (usf_data_held), 6794844_0 (usf_data_held), 6794844_1 (usf_data_held), 6794844_2 (usf_data_held), 6794362 (wml_transform_marker_l1), 6794361 (wml_transform_qwen_fr), 6794360 (wml_transform_mistral)</div>
+<div class="untracked-row"><span class="untracked-why">Not an extraction run (its task names no project run).</span> 6794844_0 (usf_data_held), 6794844_1 (usf_data_held), 6794844_2 (usf_data_held), 6794724_1 (usf_data_held), 6794724_2 (usf_data_held), 6794362 (wml_transform_marker_l1), 6794361 (wml_transform_qwen_fr), 6794360 (wml_transform_mistral), 6794724_0 (usf_data_held)</div>
 <div class="untracked-row"><span class="untracked-why">No identifiable extraction run in Slurm arguments or local submission receipts.</span> 6805847 (llmx_sci_pk3), 6805848 (llmx_sci_pk3), 6808248 (sci_data_held), 6808249 (sci_data_held), 6808250 (sci_data_held), 6808251 (sci_data_held)</div>
 </div>
   </section>
@@ -120,38 +113,26 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job">
   <div class="job-main">
     <div class="job-name">usf_data_held</div>
-    <div class="job-id">Job 6794724_0</div>
+    <div class="job-id">Job 6794358_1</div>
   </div>
   <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
+    <span class="pill complete">COMPLETED</span>
+    <span>1-07:27:54</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Priority)</div>
+  <div class="reason">g010 &middot; runs full_v1 &gt; case_full_v1</div>
 </div>
 <div class="job">
   <div class="job-main">
     <div class="job-name">usf_data_held</div>
-    <div class="job-id">Job 6794724_1</div>
+    <div class="job-id">Job 6794358_0</div>
   </div>
   <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
+    <span class="pill complete">COMPLETED</span>
+    <span>2-15:45:49</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Priority)</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">usf_data_held</div>
-    <div class="job-id">Job 6794724_2</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">(Priority)</div>
+  <div class="reason">g007 &middot; runs full_v1 &gt; case_full_v1</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -263,6 +244,30 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
+    <div class="job-name">usf_data_held</div>
+    <div class="job-id">Job 6794724_1</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Resources)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">usf_data_held</div>
+    <div class="job-id">Job 6794724_2</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Resources)</div>
+</div>
+<div class="job">
+  <div class="job-main">
     <div class="job-name">wml_transform_marker_l1</div>
     <div class="job-id">Job 6794362</div>
   </div>
@@ -312,62 +317,26 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="job">
   <div class="job-main">
     <div class="job-name">usf_data_held</div>
+    <div class="job-id">Job 6794724_0</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill running">RUNNING</span>
+    <span>3:06</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">g007</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">usf_data_held</div>
     <div class="job-id">Job 6794358_2</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1-07:07:32</span>
+    <span>1-07:13:38</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007 &middot; runs full_v1 &gt; case_full_v1</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">usf_data_held</div>
-    <div class="job-id">Job 6794358_1</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>1-07:26:23</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g010 &middot; runs full_v1 &gt; case_full_v1</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">usf_data_held</div>
-    <div class="job-id">Job 6794358_0</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>2-15:42:50</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g007 &middot; runs full_v1 &gt; case_full_v1</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">job_data_held</div>
-    <div class="job-id">Job 6793946</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>3-03:05:56</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g010 &middot; runs full_v1 &gt; case_full_v1</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">job_data_held</div>
-    <div class="job-id">Job 6793945</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>5-10:08:26</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g010 &middot; runs full_v1 &gt; case_full_v1 &gt; win_full_v1</div>
 </div>
   </section>
 
@@ -375,7 +344,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-17T15:49:43.7292005-05:00');
+const updatedAt = new Date('2026-11-17T15:55:47.8221625-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
