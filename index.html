@@ -63,7 +63,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 18, 2026 3:34:42 PM Eastern</span> &middot; <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 18, 2026 3:41:09 PM Eastern</span> &middot; <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -71,7 +71,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="summary">
     <div class="stat"><div class="stat-num">5</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">14</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
@@ -79,19 +79,19 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">sci_bladder_management / sci_full_v3</div>
-    <div class="progress-pct">24.09%</div>
+    <div class="progress-pct">24.19%</div>
   </div>
   <div class="bar"><div class="fill" style="width:24%"></div></div>
   <div class="progress-stats">
-    <span>23,460 / 97,365 calls</span>
-    <span>782 / 3,246 chunks</span>
+    <span>23,550 / 97,365 calls</span>
+    <span>785 / 3,246 chunks</span>
     <span>5 GPUs running, 5 queued</span>
   </div>
-  <div class="eta">Estimated finish: Nov 21, 1:37 PM Eastern</div>
+  <div class="eta">Estimated finish: Nov 21, 1:36 PM Eastern</div>
 </div>
 <div class="progress-card waiting">
   <div class="progress-head">
-    <div class="progress-title">psma_registry / pilot1</div>
+    <div class="progress-title">psma_registry / pilot2</div>
     <div class="progress-pct muted">0%</div>
   </div>
   <div class="eta">Not started yet (not prepared on the cluster).</div>
@@ -149,7 +149,8 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="eta">Extraction complete</div>
 </div>
 <div class="untracked"><div class="untracked-head">No progress for these jobs</div>
-<div class="untracked-row"><span class="untracked-why">No identifiable extraction run in Slurm arguments or local submission receipts.</span> 6829027_0 (llmx_psma_pilot1), 6829027_1 (llmx_psma_pilot1)</div>
+<div class="untracked-row"><span class="untracked-why">Not an extraction run (its script names no run).</span> 6829026 (prep_psma_pilot1)</div>
+<div class="untracked-row"><span class="untracked-why">No identifiable extraction run in Slurm arguments or local submission receipts.</span> 6829027_0 (llmx_psma_pilot1), 6829027_1 (llmx_psma_pilot1), 6829414_0 (llmx_psma_pilot2), 6829414_1 (llmx_psma_pilot2)</div>
 <div class="untracked-row"><span class="untracked-why">Not an extraction run (its task names no project run).</span> 6794362 (wml_transform_marker_l1), 6794361 (wml_transform_qwen_fr), 6794360 (wml_transform_mistral)</div>
 </div>
   </section>
@@ -162,11 +163,47 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job-id">Job 6829026</div>
   </div>
   <div class="job-meta">
+    <span class="pill other">CANCELLED</span>
+    <span>0:00</span>
+    <span>defq</span>
+  </div>
+  <div class="reason"></div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">prep_psma_pilot</div>
+    <div class="job-id">Job 6829413</div>
+  </div>
+  <div class="job-meta">
     <span class="pill pending">PENDING</span>
     <span>0:00</span>
     <span>defq</span>
   </div>
-  <div class="reason">(Priority) &middot; runs pilot1</div>
+  <div class="reason">(Priority) &middot; runs pilot2</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">llmx_psma_pilot1</div>
+    <div class="job-id">Job 6829027_0</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill other">CANCELLED</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason"></div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">llmx_psma_pilot1</div>
+    <div class="job-id">Job 6829027_1</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill other">CANCELLED</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason"></div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -254,8 +291,8 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
-    <div class="job-name">llmx_psma_pilot1</div>
-    <div class="job-id">Job 6829027_0</div>
+    <div class="job-name">llmx_psma_pilot2</div>
+    <div class="job-id">Job 6829414_0</div>
   </div>
   <div class="job-meta">
     <span class="pill pending">PENDING</span>
@@ -266,8 +303,8 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
-    <div class="job-name">llmx_psma_pilot1</div>
-    <div class="job-id">Job 6829027_1</div>
+    <div class="job-name">llmx_psma_pilot2</div>
+    <div class="job-id">Job 6829414_1</div>
   </div>
   <div class="job-meta">
     <span class="pill pending">PENDING</span>
@@ -331,7 +368,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>22:10:08</span>
+    <span>22:16:32</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010 &middot; runs sci_full_v3</div>
@@ -343,7 +380,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>22:38:34</span>
+    <span>22:44:58</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010 &middot; runs sci_full_v3</div>
@@ -355,7 +392,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>23:11:20</span>
+    <span>23:17:44</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010 &middot; runs sci_full_v3</div>
@@ -367,7 +404,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>23:37:58</span>
+    <span>23:44:22</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007 &middot; runs sci_full_v3</div>
@@ -379,7 +416,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>23:41:39</span>
+    <span>23:48:03</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007 &middot; runs sci_full_v3</div>
@@ -390,7 +427,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-18T15:34:42.0765876-05:00');
+const updatedAt = new Date('2026-11-18T15:41:09.0082627-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
