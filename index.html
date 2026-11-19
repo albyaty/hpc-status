@@ -63,33 +63,20 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 18, 2026 7:53:35 PM Eastern</span> &middot; <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 18, 2026 7:59:05 PM Eastern</span> &middot; <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">14</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">13</div><div class="stat-label">Queued</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="progress-card">
-  <div class="progress-head">
-    <div class="progress-title">sci_bladder_management / sci_full_v3</div>
-    <div class="progress-pct">28.66%</div>
-  </div>
-  <div class="bar"><div class="fill" style="width:29%"></div></div>
-  <div class="progress-stats">
-    <span>27,900 / 97,365 calls</span>
-    <span>930 / 3,246 chunks</span>
-    <span>5 GPUs running, 5 queued</span>
-  </div>
-  <div class="eta">Estimated finish: Nov 21, 1:55 PM Eastern</div>
-</div>
-<div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">sci_bladder_management / packet_pilot_v3</div>
     <div class="progress-pct">100.00%</div>
@@ -98,9 +85,22 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="progress-stats">
     <span>363 / 363 calls</span>
     <span>13 / 13 chunks</span>
-    <span>0 GPUs running, 3 queued</span>
+    <span>1 GPU running, 2 queued</span>
   </div>
   <div class="eta">Extraction complete</div>
+</div>
+<div class="progress-card">
+  <div class="progress-head">
+    <div class="progress-title">sci_bladder_management / sci_full_v3</div>
+    <div class="progress-pct">28.72%</div>
+  </div>
+  <div class="bar"><div class="fill" style="width:29%"></div></div>
+  <div class="progress-stats">
+    <span>27,960 / 97,365 calls</span>
+    <span>932 / 3,246 chunks</span>
+    <span>5 GPUs running, 4 queued</span>
+  </div>
+  <div class="eta">Estimated finish: Nov 21, 2:01 PM Eastern</div>
 </div>
 <div class="progress-card">
   <div class="progress-head">
@@ -111,7 +111,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="progress-stats">
     <span>363 / 363 calls</span>
     <span>13 / 13 chunks</span>
-    <span>0 GPUs running, 3 queued</span>
+    <span>0 GPUs running, 2 queued</span>
   </div>
   <div class="eta">Extraction complete</div>
 </div>
@@ -193,18 +193,6 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>gpu-h100</span>
   </div>
   <div class="reason">(Priority) &middot; runs sci_full_v3</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">usf_data_held</div>
-    <div class="job-id">Job 6794844_2</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">(Resources) &middot; runs sci_full_v3 &gt; packet_pilot_v3 &gt; packet_pilot_v3_fast</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -293,11 +281,23 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 <div class="job">
   <div class="job-main">
     <div class="job-name">usf_data_held</div>
+    <div class="job-id">Job 6794844_2</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill running">RUNNING</span>
+    <span>1:39</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">g007 &middot; runs packet_pilot_v3</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">usf_data_held</div>
     <div class="job-id">Job 6794844_1</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1-02:29:54</span>
+    <span>1-02:35:25</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010 &middot; runs sci_full_v3</div>
@@ -309,7 +309,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1-02:58:20</span>
+    <span>1-03:03:51</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010 &middot; runs sci_full_v3</div>
@@ -321,7 +321,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1-03:31:06</span>
+    <span>1-03:36:37</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010 &middot; runs sci_full_v3</div>
@@ -333,7 +333,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1-03:57:44</span>
+    <span>1-04:03:15</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007 &middot; runs sci_full_v3</div>
@@ -345,7 +345,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1-04:01:25</span>
+    <span>1-04:06:56</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007 &middot; runs sci_full_v3</div>
@@ -356,7 +356,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-18T19:53:35.0635827-05:00');
+const updatedAt = new Date('2026-11-18T19:59:05.0980416-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
