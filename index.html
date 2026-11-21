@@ -63,15 +63,15 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 21, 2026 7:11:23 AM Eastern</span> &middot; <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 21, 2026 7:16:32 AM Eastern</span> &middot; <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Running</div></div>
-    <div class="stat"><div class="stat-num">6</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Queued</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
@@ -96,35 +96,11 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="job-id">Job 6845602</div>
   </div>
   <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
+    <span class="pill complete">COMPLETED</span>
+    <span>2:49</span>
     <span>defq</span>
   </div>
-  <div class="reason">(Priority) &middot; runs sci_full_v3_retry32k_</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">sci_retry</div>
-    <div class="job-id">Job 6845604</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">(Dependency) &middot; runs sci_full_v3_retry32k_</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">sci_retry</div>
-    <div class="job-id">Job 6845603</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">(Dependency) &middot; runs sci_full_v3_retry32k_</div>
+  <div class="reason">lri047 &middot; runs sci_full_v3_retry32k_</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -164,12 +140,36 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
+    <div class="job-name">sci_retry</div>
+    <div class="job-id">Job 6845603</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill running">RUNNING</span>
+    <span>0:59</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">g007 &middot; runs sci_full_v3_retry32k_</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">sci_retry</div>
+    <div class="job-id">Job 6845604</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill running">RUNNING</span>
+    <span>0:59</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">g007 &middot; runs sci_full_v3_retry32k_</div>
+</div>
+<div class="job">
+  <div class="job-main">
     <div class="job-name">wml_transform_qwen_fr</div>
     <div class="job-id">Job 6829529</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>3:03:51</span>
+    <span>3:08:59</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
@@ -181,7 +181,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>3:12:51</span>
+    <span>3:17:59</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -192,7 +192,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-21T07:11:23.8511442-05:00');
+const updatedAt = new Date('2026-11-21T07:16:32.5593264-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
