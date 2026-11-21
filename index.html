@@ -63,33 +63,20 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 21, 2026 3:45:52 AM Eastern</span> &middot; <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 21, 2026 3:51:00 AM Eastern</span> &middot; <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">9</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
-    <div class="progress-card">
-  <div class="progress-head">
-    <div class="progress-title">psma_registry / pilot3</div>
-    <div class="progress-pct">79.79%</div>
-  </div>
-  <div class="bar"><div class="fill" style="width:80%"></div></div>
-  <div class="progress-stats">
-    <span>1,244 / 1,559 calls</span>
-    <span>2 / 4 chunks</span>
-    <span>1 GPU running, 0 queued</span>
-  </div>
-  <div class="eta">Estimated finish: Nov 21, 3:49 AM Eastern</div>
-</div>
-<div class="progress-card waiting">
+    <div class="progress-card waiting">
   <div class="progress-head">
     <div class="progress-title">sci_bladder_management / sci_full_v3_retry32k_</div>
     <div class="progress-pct muted">0%</div>
@@ -97,7 +84,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="eta">Not started yet (not prepared on the cluster).</div>
 </div>
 <div class="untracked"><div class="untracked-head">No progress for these jobs</div>
-<div class="untracked-row"><span class="untracked-why">Not an extraction run (its task names no project run).</span> 6829528 (wml_transform_mistral), 6829529 (wml_transform_qwen_fr), 6829530 (wml_transform_marker_l1), 6794362 (wml_transform_marker_l1), 6794361 (wml_transform_qwen_fr), 6794360 (wml_transform_mistral)</div>
+<div class="untracked-row"><span class="untracked-why">Not an extraction run (its task names no project run).</span> 6793947 (job_data_held), 6829529 (wml_transform_qwen_fr), 6829530 (wml_transform_marker_l1), 6829528 (wml_transform_mistral), 6794362 (wml_transform_marker_l1), 6794361 (wml_transform_qwen_fr), 6794360 (wml_transform_mistral)</div>
 </div>
   </section>
 
@@ -117,15 +104,15 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 <div class="job">
   <div class="job-main">
-    <div class="job-name">wml_transform_mistral</div>
-    <div class="job-id">Job 6829528</div>
+    <div class="job-name">job_data_held</div>
+    <div class="job-id">Job 6793947</div>
   </div>
   <div class="job-meta">
-    <span class="pill pending">PENDING</span>
-    <span>0:00</span>
+    <span class="pill complete">COMPLETED</span>
+    <span>20:34</span>
     <span>gpu-h100</span>
   </div>
-  <div class="reason">(Priority)</div>
+  <div class="reason">g007</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -150,6 +137,18 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <span>gpu-h100</span>
   </div>
   <div class="reason">(Priority)</div>
+</div>
+<div class="job">
+  <div class="job-main">
+    <div class="job-name">wml_transform_mistral</div>
+    <div class="job-id">Job 6829528</div>
+  </div>
+  <div class="job-meta">
+    <span class="pill pending">PENDING</span>
+    <span>0:00</span>
+    <span>gpu-h100</span>
+  </div>
+  <div class="reason">(Resources)</div>
 </div>
 <div class="job">
   <div class="job-main">
@@ -211,25 +210,13 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="reason">(JobHeldUser)</div>
 </div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">job_data_held</div>
-    <div class="job-id">Job 6793947</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill running">RUNNING</span>
-    <span>18:57</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g007 &middot; runs pilot3</div>
-</div>
   </section>
 
   <div class="footer">Status publishes every 5 minutes. Browser refreshes automatically. Progress counts completed chunks.</div>
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-21T03:45:52.5451548-05:00');
+const updatedAt = new Date('2026-11-21T03:51:00.0551329-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
