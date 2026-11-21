@@ -63,7 +63,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 21, 2026 9:24:55 AM Eastern</span> &middot; <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 21, 2026 9:30:03 AM Eastern</span> &middot; <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -79,22 +79,28 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">sci_bladder_management / sci_full_v3_retry32k_pathway</div>
-    <div class="progress-pct">19.42%</div>
+    <div class="progress-pct">21.04%</div>
   </div>
-  <div class="bar"><div class="fill" style="width:19%"></div></div>
+  <div class="bar"><div class="fill" style="width:21%"></div></div>
   <div class="progress-stats">
-    <span>120 / 618 calls</span>
-    <span>12 / 62 chunks</span>
+    <span>130 / 618 calls</span>
+    <span>13 / 62 chunks</span>
     <span>3 GPUs running, 0 queued</span>
   </div>
   <div class="eta">Estimated finish: Nov 21, 12:44 PM Eastern</div>
 </div>
-<div class="progress-card waiting">
+<div class="progress-card">
   <div class="progress-head">
     <div class="progress-title">psma_registry / full1</div>
-    <div class="progress-pct muted">0%</div>
+    <div class="progress-pct">0.00%</div>
   </div>
-  <div class="eta">Not started yet (not prepared on the cluster).</div>
+  <div class="bar"><div class="fill" style="width:0%"></div></div>
+  <div class="progress-stats">
+    <span>0 / 355,797 calls</span>
+    <span>0 / 661 chunks</span>
+    <span>0 GPUs running, 0 queued</span>
+  </div>
+  <div class="eta">ETA unavailable</div>
 </div>
 <div class="untracked"><div class="untracked-head">No progress for these jobs</div>
 <div class="untracked-row"><span class="untracked-why">No identifiable extraction run in Slurm arguments or local submission receipts.</span> 6852309_0 (psma_full1), 6852309_1 (psma_full1), 6852309_2 (psma_full1), 6852264_0 (psma_full1), 6852264_1 (psma_full1), 6852264_2 (psma_full1)</div>
@@ -111,7 +117,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>0:18</span>
+    <span>5:26</span>
     <span>defq</span>
   </div>
   <div class="reason">lri057 &middot; runs full1</div>
@@ -195,7 +201,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>1:17:22</span>
+    <span>1:22:30</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010 &middot; runs sci_full_v3_retry32k_pathway</div>
@@ -207,7 +213,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>2:09:23</span>
+    <span>2:14:31</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007 &middot; runs sci_full_v3_retry32k_pathway</div>
@@ -219,7 +225,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>2:09:23</span>
+    <span>2:14:31</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007 &middot; runs sci_full_v3_retry32k_pathway</div>
@@ -231,7 +237,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>5:17:23</span>
+    <span>5:22:31</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g010</div>
@@ -243,7 +249,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>5:26:23</span>
+    <span>5:31:31</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -254,7 +260,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-21T09:24:55.1159256-05:00');
+const updatedAt = new Date('2026-11-21T09:30:03.2079471-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
