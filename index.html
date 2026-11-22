@@ -63,7 +63,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 22, 2026 8:15:21 AM Eastern</span> &middot; <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 22, 2026 8:20:25 AM Eastern</span> &middot; <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -71,38 +71,24 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="summary">
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="empty">No extraction progress is available.</div>
-<div class="untracked"><div class="untracked-head">No progress for these jobs</div>
-<div class="untracked-row"><span class="untracked-why">Not an extraction run (its task names no project run).</span> 6852994 (wml_transform_marker)</div>
-</div>
   </section>
 
   <section>
     <h2>Jobs</h2>
-    <div class="job">
-  <div class="job-main">
-    <div class="job-name">wml_transform_marker</div>
-    <div class="job-id">Job 6852994</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>4:58:47</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g007</div>
-</div>
+    <div class="empty">No jobs are currently in the scheduler queue.</div>
   </section>
 
   <div class="footer">Status publishes every 5 minutes. Browser refreshes automatically. Progress counts completed chunks.</div>
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-22T08:15:21.1304719-05:00');
+const updatedAt = new Date('2026-11-22T08:20:25.4003269-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
