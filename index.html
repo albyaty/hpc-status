@@ -63,7 +63,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 22, 2026 3:29:49 AM Eastern</span> &middot; <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 22, 2026 3:34:55 AM Eastern</span> &middot; <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
@@ -71,14 +71,13 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="summary">
     <div class="stat"><div class="stat-num">1</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Queued</div></div>
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Other</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Other</div></div>
   </div>
 
   <section>
     <h2>Extraction progress</h2>
     <div class="empty">No extraction progress is available.</div>
 <div class="untracked"><div class="untracked-head">No progress for these jobs</div>
-<div class="untracked-row"><span class="untracked-why">No identifiable extraction run in Slurm arguments or local submission receipts.</span> 6852309_2 (psma_full1), 6852309_1 (psma_full1)</div>
 <div class="untracked-row"><span class="untracked-why">Not an extraction run (its task names no project run).</span> 6852994 (wml_transform_marker)</div>
 </div>
   </section>
@@ -87,36 +86,12 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <h2>Jobs</h2>
     <div class="job">
   <div class="job-main">
-    <div class="job-name">psma_full1</div>
-    <div class="job-id">Job 6852309_2</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>12:33</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g007</div>
-</div>
-<div class="job">
-  <div class="job-main">
-    <div class="job-name">psma_full1</div>
-    <div class="job-id">Job 6852309_1</div>
-  </div>
-  <div class="job-meta">
-    <span class="pill complete">COMPLETED</span>
-    <span>10:36:54</span>
-    <span>gpu-h100</span>
-  </div>
-  <div class="reason">g010</div>
-</div>
-<div class="job">
-  <div class="job-main">
     <div class="job-name">wml_transform_marker</div>
     <div class="job-id">Job 6852994</div>
   </div>
   <div class="job-meta">
     <span class="pill running">RUNNING</span>
-    <span>15:13</span>
+    <span>20:19</span>
     <span>gpu-h100</span>
   </div>
   <div class="reason">g007</div>
@@ -127,7 +102,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 </div>
 
 <script>
-const updatedAt = new Date('2026-11-22T03:29:49.7988327-05:00');
+const updatedAt = new Date('2026-11-22T03:34:55.8304370-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
