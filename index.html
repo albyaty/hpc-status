@@ -46,6 +46,47 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
 .untracked-row{margin-bottom:5px;overflow-wrap:anywhere}
 .untracked-why{color:#c3cad4}
 .footer{margin-top:28px;color:#606a78;font-size:11px;text-align:center}
+.tabs{display:flex;gap:4px;background:#14181e;border:1px solid #252b34;border-radius:13px;padding:4px;margin:0 0 6px}
+.tab{flex:1;background:none;border:0;border-radius:10px;color:#98a2b3;font:inherit;font-size:14px;font-weight:700;padding:10px 8px;cursor:pointer}
+.tab[aria-selected="true"]{background:#252b34;color:#f4f7fb}
+.lock{background:#14181e;border:1px solid #252b34;border-radius:15px;padding:18px;margin-top:18px}
+.lock-title{font-weight:750;margin-bottom:4px}
+.lock-text{color:#98a2b3;font-size:13px;margin-bottom:12px}
+.lock input[type=password]{width:100%;font-size:16px;padding:11px 12px;border-radius:10px;border:1px solid #333b46;background:#0b0d10;color:#f4f7fb}
+.lock-row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:10px;flex-wrap:wrap}
+.lock label{color:#c3cad4;font-size:13px;display:flex;gap:7px;align-items:center}
+.btn{background:#4f8cff;color:#fff;border:0;border-radius:10px;font:inherit;font-weight:700;font-size:14px;padding:9px 16px;cursor:pointer}
+.btn:disabled{opacity:.6}
+.btn.quiet{background:#252b34;color:#c3cad4;font-size:12px;padding:6px 11px}
+.lock-msg{margin-top:10px;font-size:13px;color:#f6d365;min-height:1em}
+.qbar{display:flex;justify-content:flex-end;margin:12px 0 4px}
+.qnote{color:#7f8998;font-size:12px;margin:12px 2px}
+.legend{display:flex;align-items:center;gap:6px;color:#98a2b3;font-size:12px;margin:0 2px 12px;flex-wrap:wrap}
+.legend .gpu{margin-left:6px}
+.qpart{background:#14181e;border:1px solid #252b34;border-radius:15px;padding:12px 14px;margin-bottom:10px}
+.qpart summary{cursor:pointer;line-height:1.5}
+.qpname{font-weight:750}
+.qsub{color:#98a2b3;font-size:12px}
+.qyours{color:#6fe7ad}
+.gpu-node{display:flex;align-items:center;gap:10px;color:#c3cad4;font-size:12px;margin:9px 0}
+.gpu-name{min-width:44px;color:#98a2b3}
+.gpus{display:flex;gap:4px}
+.gpu{display:inline-block;width:15px;height:15px;border-radius:4px;border:1px solid #3a4250}
+.gpu.mine{background:#55d6a9;border-color:#55d6a9}
+.gpu.theirs{background:#5b6b85;border-color:#5b6b85}
+.qhead{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#7f8998;font-weight:700;margin:14px 0 4px}
+.qrow{padding:7px 0;border-top:1px solid #222831;font-size:13px}
+.qmain{overflow-wrap:anywhere}
+.qpos{display:inline-block;min-width:34px;color:#7f8998;font-size:12px}
+.quser{font-weight:700}
+.qrow.mine .quser{color:#6fe7ad}
+.qid{color:#c3cad4}
+.qmeta{color:#7f8998;font-size:12px;margin-top:2px;padding-left:34px}
+.qnone{color:#7f8998;font-size:12px;padding:4px 0}
+.qtable{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+.qtable th{text-align:left;color:#7f8998;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.04em;padding:5px 4px}
+.qtable td{border-top:1px solid #222831;padding:7px 4px;color:#c3cad4}
+.qtable .num{text-align:right;font-variant-numeric:tabular-nums}
 @media(max-width:560px){
  .wrap{padding-top:18px}
  .summary{grid-template-columns:repeat(3,1fr);gap:7px}
@@ -63,11 +104,17 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
   <div class="top">
     <div>
       <h1>HPC Status</h1>
-      <div class="updated">Updated <span id="updatedText">Nov 23, 2026 9:24:58 AM Eastern</span> &middot; <span id="age">just now</span></div>
+      <div class="updated">Updated <span id="updatedText">Nov 23, 2026 9:30:02 AM Eastern</span> &middot; <span id="age">just now</span></div>
     </div>
     <div class="stale" id="stale">STALE</div>
   </div>
 
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="tab-jobs" data-tab="jobs" aria-selected="true">My jobs</button>
+    <button class="tab" role="tab" id="tab-queue" data-tab="queue" aria-selected="false">Cluster queue</button>
+  </div>
+
+  <div id="panel-jobs" role="tabpanel">
   <div class="summary">
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Running</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Queued</div></div>
@@ -83,12 +130,35 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#98a2b3;ma
     <h2>Jobs</h2>
     <div class="empty">No jobs are currently in the scheduler queue.</div>
   </section>
+  </div>
+
+  <div id="panel-queue" role="tabpanel" hidden>
+    <div class="lock" id="queue-lock">
+      <div class="lock-title">Locked</div>
+      <div class="lock-text" id="queue-locktext">Enter the dashboard password to see every user's jobs.</div>
+      <form id="queue-form" autocomplete="on">
+        <input type="text" name="username" value="hpc-status" autocomplete="username" hidden>
+        <input type="password" id="queue-pw" autocomplete="current-password" placeholder="Password" aria-label="Password">
+        <div class="lock-row">
+          <label><input type="checkbox" id="queue-remember" checked> Remember on this device</label>
+          <button class="btn" type="submit" id="queue-unlock">Unlock</button>
+        </div>
+      </form>
+      <div class="lock-msg" id="queue-msg"></div>
+    </div>
+    <div id="queue-open" hidden>
+      <div class="qbar"><button class="btn quiet" type="button" id="queue-relock">Lock</button></div>
+      <div id="queue-content"></div>
+    </div>
+  </div>
 
   <div class="footer">Status publishes every 5 minutes. Browser refreshes automatically. Progress counts completed chunks.</div>
 </div>
 
+<script type="application/json" id="queue-data">{"state":"setup"}</script>
+
 <script>
-const updatedAt = new Date('2026-11-23T09:24:58.2826814-05:00');
+const updatedAt = new Date('2026-11-23T09:30:02.7285969-05:00');
 function updateAge(){
   const mins = Math.max(0, Math.floor((Date.now() - updatedAt.getTime())/60000));
   const age = document.getElementById('age');
@@ -102,11 +172,125 @@ function updateAge(){
 }
 updateAge();
 setInterval(updateAge, 30000);
-setTimeout(() => {
-  const u = new URL(window.location.href);
-  u.searchParams.set('refresh', Date.now().toString());
-  window.location.replace(u.toString());
-}, 60000);
+(function(){
+  var qd = {};
+  try { qd = JSON.parse(document.getElementById('queue-data').textContent); } catch (e) {}
+  var lockBox = document.getElementById('queue-lock');
+  var openBox = document.getElementById('queue-open');
+  var content = document.getElementById('queue-content');
+  var form = document.getElementById('queue-form');
+  var pw = document.getElementById('queue-pw');
+  var remember = document.getElementById('queue-remember');
+  var msg = document.getElementById('queue-msg');
+  var unlockBtn = document.getElementById('queue-unlock');
+  var storeKey = qd.salt ? 'hpcq-key:' + qd.salt : null;
+  var opened = false;
+
+  function b64(s){ var bin = atob(s), out = new Uint8Array(bin.length); for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i); return out; }
+  function toB64(u){ var s = ''; for (var i = 0; i < u.length; i++) s += String.fromCharCode(u[i]); return btoa(s); }
+  function store(name){ try { return window[name]; } catch (e) { return null; } }
+  function readKey(){
+    if (!storeKey) return null;
+    var names = ['localStorage', 'sessionStorage'];
+    for (var i = 0; i < names.length; i++) { var s = store(names[i]); try { var v = s && s.getItem(storeKey); if (v) return v; } catch (e) {} }
+    return null;
+  }
+  function forget(){
+    ['localStorage', 'sessionStorage'].forEach(function(n){
+      var s = store(n); if (!s) return;
+      try { var keys = []; for (var i = 0; i < s.length; i++) { var k = s.key(i); if (k && k.indexOf('hpcq-key:') === 0) keys.push(k); } keys.forEach(function(k){ s.removeItem(k); }); } catch (e) {}
+    });
+  }
+  function saveKey(bits, keep){ forget(); var s = store(keep ? 'localStorage' : 'sessionStorage'); try { if (s) s.setItem(storeKey, toB64(bits)); } catch (e) {} }
+  function subtle(){
+    var c = window.crypto && window.crypto.subtle;
+    if (!c) throw new Error('this browser cannot decrypt on this page (open the https address)');
+    return c;
+  }
+  function decrypt(bits){
+    return Promise.resolve().then(function(){
+      var c = subtle(), iv = b64(qd.iv), ct = b64(qd.ct), mac = b64(qd.mac);
+      var signed = new Uint8Array(iv.length + ct.length); signed.set(iv, 0); signed.set(ct, iv.length);
+      return c.importKey('raw', bits.slice(32, 64), {name: 'HMAC', hash: 'SHA-256'}, false, ['verify'])
+        .then(function(k){ return c.verify('HMAC', k, mac, signed); })
+        .then(function(ok){
+          if (!ok) { var e = new Error('wrong password'); e.wrong = true; throw e; }
+          return c.importKey('raw', bits.slice(0, 32), {name: 'AES-CBC'}, false, ['decrypt']);
+        })
+        .then(function(k){ return c.decrypt({name: 'AES-CBC', iv: iv}, k, ct); })
+        .then(function(buf){ return new TextDecoder().decode(buf); });
+    });
+  }
+  function derive(password){
+    return Promise.resolve().then(function(){
+      var c = subtle();
+      return c.importKey('raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveBits'])
+        .then(function(k){ return c.deriveBits({name: 'PBKDF2', salt: b64(qd.salt), iterations: qd.iter, hash: 'SHA-256'}, k, 512); })
+        .then(function(buf){ return new Uint8Array(buf); });
+    });
+  }
+  // Sections opened or closed by hand stay that way across the 60 s reloads.
+  function readOpen(){ var s = store('sessionStorage'); try { return JSON.parse((s && s.getItem('hpcq-open')) || 'null'); } catch (e) { return null; } }
+  function show(html){
+    content.innerHTML = html; lockBox.hidden = true; openBox.hidden = false; opened = true;
+    var saved = readOpen(), parts = content.querySelectorAll('details[data-part]');
+    for (var i = 0; i < parts.length; i++) {
+      var name = parts[i].getAttribute('data-part');
+      if (saved && Object.prototype.hasOwnProperty.call(saved, name)) parts[i].open = !!saved[name];
+      parts[i].addEventListener('toggle', function(){
+        var now = readOpen() || {}; now[this.getAttribute('data-part')] = this.open;
+        var s = store('sessionStorage'); try { if (s) s.setItem('hpcq-open', JSON.stringify(now)); } catch (e) {}
+      });
+    }
+  }
+  function lock(){ forget(); content.innerHTML = ''; openBox.hidden = true; lockBox.hidden = false; opened = false; msg.textContent = ''; }
+  function tryStored(){
+    if (opened || !qd.ct) return;
+    var s = readKey(); if (!s) return;
+    decrypt(b64(s)).then(show).catch(function(){ forget(); });
+  }
+
+  if (!qd.ct) {
+    document.getElementById('queue-locktext').textContent = qd.state === 'error'
+      ? 'The queue tab could not be built at the last publish; the next publish tries again.'
+      : 'Not set up yet. On the work PC, double-click set_queue_password.bat in the dashboard folder; the next publish adds the queue.';
+    form.hidden = true;
+  }
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    if (!pw.value) return;
+    unlockBtn.disabled = true; msg.textContent = 'Unlocking...';
+    var bits;
+    derive(pw.value)
+      .then(function(b){ bits = b; return decrypt(b); })
+      .then(function(html){ saveKey(bits, remember.checked); pw.value = ''; msg.textContent = ''; show(html); })
+      .catch(function(e){ msg.textContent = e.wrong ? 'Wrong password.' : ('Could not unlock: ' + e.message); })
+      .then(function(){ unlockBtn.disabled = false; });
+  });
+  document.getElementById('queue-relock').addEventListener('click', lock);
+
+  var tabs = document.querySelectorAll('.tab');
+  function showTab(name){
+    for (var i = 0; i < tabs.length; i++) {
+      var t = tabs[i], on = t.getAttribute('data-tab') === name;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      document.getElementById('panel-' + t.getAttribute('data-tab')).hidden = !on;
+    }
+    try { history.replaceState(null, '', location.pathname + location.search + (name === 'queue' ? '#queue' : '')); } catch (e) {}
+    if (name === 'queue') tryStored();
+  }
+  for (var i = 0; i < tabs.length; i++) tabs[i].addEventListener('click', function(){ showTab(this.getAttribute('data-tab')); });
+  showTab(location.hash === '#queue' ? 'queue' : 'jobs');
+
+  // Reload every 60 s for new data, but not while a password is being typed.
+  function reload(){
+    if (document.activeElement === pw || pw.value) { setTimeout(reload, 60000); return; }
+    var u = new URL(window.location.href);
+    u.searchParams.set('refresh', Date.now().toString());
+    window.location.replace(u.toString());
+  }
+  setTimeout(reload, 60000);
+})();
 </script>
 </body>
 </html>
